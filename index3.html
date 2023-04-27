@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Ebenso e.V.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<link href="css/header.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="pics/logoTemp.jpg" style="height: 60px;"></a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li style="margin-left: 20px;"></li>
+        <li><a href="#ebenso">EBENSO</a></li>
+        <li><a href="#wir">WIR</a></li>
+        <li><a href="#pauscha">PAUSCHA</a></li>
+        <li><a href="#">LANGE.WEILE</a></li>
+        <li><a href="#">KONTAKT</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:0px">
+  
+
+  <!-- Bild -->
+  <section style="background-image: url('pics/ebenso/ebenso.jpg');
+   background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px -650px; /*TODO change!! */
+    filter: sepia(0.2);
+  text-align: center;">
+    <div>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+      <h1 style="margin-top: 0px;">Ebenso e.V.</h1>
+      <p class="w3-opacity"><i>Ein Leben in Gemeinschaft<br>
+        Leben, aber nicht allein<br>
+        sondern gemeinsam <br>
+        statt einsam<br></i></p>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+  </section>
+
+  <!-- Das sind wir section?? -->
+  <div id="wir" class="das-sind-wir-section">
+    <h1>Das sind wir</h1>
+
+  </div>
+
+
+  <!-- Video -->
+  <div id="video" class="video-background">
+    <video id="myVideo"  autoplay loop muted>
+      <source src="pics/file.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="scroll-content">
+     asdwasd<br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+  
+
+
+  <!-- Der Kern -->
+  <div id="kern" class="der-kern-section">
+    der Kern ....
+  </div>
+
+
+  <!-- Bilder -->
+  <div id="bilder" class="bilder-section">
+    bilder.....
+  </div>
+
+  <!-- Entstehung -->
+  <div id="entstehung" class="entstehung-section">
+    Entstehung....
+  </div>
+
+  <!--aktuelle Projekte-->
+<div id="projekte" class="projekte-section">
+  aktuelle Projekte....
+</div>
+
+  <!-- Pauscha -->
+<div id="pauscha" class="pauscha-section">
+  Pauscha....
+</div>
+
+
+
+  <script>
+
+    function scrollTo(id){
+    	window.scroll({
+        top: document.getElementById(id).offsetTop,
+        behavior: 'smooth'
+      }); 
+    }
+
+    var video = document.getElementById("myVideo");
+      video.playbackRate = 0.4;
+      video.play();
+  </script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
+  <a href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;&nbsp;<br>
+  © <i class="fa ">2023 ebenso e.V</i><br>
+  <a href="https://www.instagram.com/ebenso_e.v/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+  
+</footer>
+</body>
+</html>
