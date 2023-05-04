@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ebenso e.V.</title>
+    <link href="css/layout.css" type="text/css" rel="stylesheet" />
+    <script src="scripts/layout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+        let $root = $('html, body');
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body onload="replaceNames();">
+
+    <div id="header">
+        <nav>
+            <img src="pics/logotemp.jpg" />
+            <ul class="menu">
+                <li><a href="#ebenso">EBENSO</a>
+                    <ul>
+                        <li><a href="#">Entstehung</a></li>
+                    </ul>
+                </li>
+                <li><a href="#wir">WIR</a>
+                    <ul>
+                        <li><a href="#kern">Der Kern</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pauscha">PAUSCHA</a>
+                    <ul>
+                        <li><a href="#">Bildergalerie</a></li>
+                        <li><a href="#">Ein Dorf als Keimzelle</a></li>
+                        <li><a href="#">3D-Modell</a></li>
+                        <li><a href="#">Aktuelles / Zuwachs</a></li>
+                        <li><a href="#">Unterstützung</a></li>
+                    </ul>
+                </li>
+                <li><a href="#langeweile">LANGE.WEILE</a></li>
+                <li><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="content">
+
+        <div class="row" id="ebenso">
+        </div>
+
+        <div id="wir" class="row">
+            <h1>DAS SIND WIR</h1>
+        </div>
+        <div class="row">
+            <div id="video" class="video-background">
+
+                <video id="wirvideo" autoplay loop muted>
+                    <source src="pics/file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- platzhalter zum testen -->
+
+                <img class="col-4" src="pics/ebenso/ebensokleiner.jpg" />
+                <div class="col-8" style="height:500px;">
+                    <p class="panel">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <!---->
+
+            </div>
+        </div>
+        <div id="kern" class="row">
+            <h1>UNSER KERNTEAM</h1>
+        </div>
+        <div class="row">
+            <!-- Der Name im H1-Element wird durch JS als Dateiname für das Hintergrundbild gesetzt: replaceNames()-->
+            <div class="portrait">
+                <h1>AHMED</h1>
+                <p>Ich bin ein Beispiel für einen kurzen, dreizeiligen Steckbrief über die jeweilige Person die man sich gerade anschaut.</p>
+            </div>
+
+            <div class="portrait">
+                <h1>NAME</h1>
+                <p>Ich bin ein Beispiel für einen kurzen, dreizeiligen Steckbrief über die jeweilige Person die man sich gerade anschaut.</p>
+            </div>
+
+            <div class="portrait">
+                <h1>NAME2</h1>
+                <p>Ich bin ein Beispiel für einen kurzen, dreizeiligen Steckbrief über die jeweilige Person die man sich gerade anschaut.</p>
+            </div>
+
+            <div class="portrait">
+                <h1>NAME3</h1>
+                <p>Ich bin ein Beispiel für einen kurzen, dreizeiligen Steckbrief über die jeweilige Person die man sich gerade anschaut.</p>
+            </div>
+
+            <div class="portrait">
+                <h1>NAME4</h1>
+                <p>Ich bin ein Beispiel für einen kurzen, dreizeiligen Steckbrief über die jeweilige Person die man sich gerade anschaut.</p>
+            </div>
+
+        </div>
+
+        <div class="row" id="pauscha">
+            PAUSCHA
+        </div>
+
+        <div class="row" id="langeweile">
+            LANGE.WEILE
+        </div>
+
+        <div class="row" id="kontakt">
+            KONTAKT
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+</body>
+</html>
