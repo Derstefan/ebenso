@@ -3,67 +3,38 @@ body {
   padding: 0;
   font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
 }
-.mySlides {display: none}
+  .mySlides {display: none}
 
-  .text-over-image {
-    position: relative;
-  }
 
-  .text-over-image h1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 32px;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  .text-over-image p{
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
 
 
   @media only screen and (min-width: 1080px) {
-    .text-over-image h1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 72px;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  .text-over-image p{
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 42px;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
   p {
     font-size: 20px;
-    font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans'
+    font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
   }
   h1 {
     font-size: 40px;
     font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
   }
   }
+
+
+  .text-over-image2 h1 {
+    color: white;
+    margin-top: 20px;
+    font-size: 5.8rem;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  .text-over-image2 p{
+    color: white;
+    font-size: 3.8rem;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
 
 
   .video-background {
