@@ -9,31 +9,61 @@ body {
 
 
   @media only screen and (min-width: 1080px) {
-  p {
-    font-size: 20px;
-    font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
-  }
-  h1 {
-    font-size: 40px;
-    font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
-  }
+    p {
+      font-size: 20px;
+      font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
+    }
+    h1 {
+      font-size: 40px;
+      font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
+    }
   }
 
 
   .text-over-image2 h1 {
     color: white;
     margin-top: 20px;
-    font-size: 5.8rem;
+    font-size: 5.8vw;
     text-align: center;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
 
   .text-over-image2 p{
     color: white;
-    font-size: 3.8rem;
+    font-size: 3.8vw;
     text-align: center;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
+
+
+
+  .colortitle {
+    color: white;
+    margin-top: 20px;
+    font-size: 5.8vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  .colorparagraph {
+    color: white;
+    font-size: 3.1vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+  
+  .colortext {
+    color: white;
+    font-size: 2.1vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+
 
 
 
@@ -57,10 +87,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     overflow-y: scroll;
   }
+
+
+
+
+
 
 
   .video-container {
