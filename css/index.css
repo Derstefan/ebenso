@@ -83,7 +83,7 @@ body {
     z-index: -2;
   }
   
-  .scroll-content {
+  .video-background .scroll-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,7 +131,7 @@ body {
   }
 
   .entstehung-section {
-    background-color:rgb(27, 27, 85);
+    background-color:rgb(255, 236, 221);
     padding: 50px;
     text-align: center;
   }
