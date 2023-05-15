@@ -20,15 +20,15 @@ body {
   }
 
 
-  .text-over-image2 h1 {
+  .title h1 {
     color: white;
     margin-top: 20px;
-    font-size: 5.8vw;
+    font-size: 5.1vw;
     text-align: center;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
 
-  .text-over-image2 p{
+  .title p{
     color: white;
     font-size: 3.8vw;
     text-align: center;
@@ -40,7 +40,7 @@ body {
   .colortitle {
     color: white;
     margin-top: 20px;
-    font-size: 5.8vw;
+    font-size: 4.6vw;
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -48,7 +48,7 @@ body {
 
   .colorparagraph {
     color: white;
-    font-size: 3.1vw;
+    font-size: 2.5vw;
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -56,7 +56,7 @@ body {
   
   .colortext {
     color: white;
-    font-size: 2.1vw;
+    font-size: 1.6vw;
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -117,6 +117,14 @@ body {
     text-align: center;
   }
 
+  .das-sind-wir-section .text {
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
 
   .der-kern-section {
     background-color:rgb(27, 27, 85);
@@ -131,19 +139,65 @@ body {
   }
 
   .entstehung-section {
-    background-color:rgb(255, 236, 221);
+    background-color:rgb(255, 255, 255);
     padding: 50px;
     text-align: center;
   }
+
+
+  .entstehung-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 3.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .entstehung-section .text {
+    color: black;
+    font-size: 2.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
 
   .projekte-section {
     background-color:rgb(27, 27, 85);
     padding: 50px;
     text-align: center;
   }
+  
 
   .pauscha-section {
     background-color:rgb(27, 27, 85);
     padding: 50px;
     text-align: center;
+  }
+
+
+  .keimzelle-section {
+    background-color:rgba(199, 73, 196, 0.82);
+    padding: 50px;
+    text-align: center;
+  }
+
+  .keimzelle-section .title {
+    color: white;
+    margin-top: 20px;
+    font-size: 2.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  .keimzelle-section .item {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
