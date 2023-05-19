@@ -65,7 +65,14 @@ body {
 
 
 
-
+  .title-pic {
+    background-image: url('../pics/ebenso/ebenso.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top 23%;
+    filter: hue-rotate(30deg);
+    text-align: center;
+  }
 
   .video-background {
     position: relative;
@@ -201,3 +208,30 @@ body {
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
+
+
+  .hover-text {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .hover-text:hover::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    min-width: 400px;
+    transform: translateX(-50%);
+    padding: 18px;
+    background-color: #0f0f0f;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hover-text:hover::after {
+    opacity: 1;
+  }
+  

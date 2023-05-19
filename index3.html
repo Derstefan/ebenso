@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-<title>Ebenso e.V.</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="css/index.css" type="text/css" rel="stylesheet" />
-<link href="css/header.css" type="text/css" rel="stylesheet" />
+  <head>
+    <title>Ebenso e.V.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href="css/header.css" type="text/css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
@@ -31,17 +32,10 @@
   </header>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:0px">
+<div class="w3-content" style="max-width:4000px;margin-top:0px">
   
   <!-- Bild -->
-  <div>
-  <section style="background-image: url('pics/ebenso/ebenso.jpg');
-   background-attachment: fixed;
-    background-size: cover;
-    background-position: center top 23%;
-    filter: hue-rotate(30deg);
-    height: 40%;
-  text-align: center;">
+  <section class="title-pic">
     <div>
       <br/><br/>
       <div class="title">
@@ -65,7 +59,6 @@
 
     </div>
   </section>
-</div>
 
   <!-- Das sind wir section?? -->
   <div id="wir" class="das-sind-wir-section">
@@ -152,42 +145,53 @@
 
     <div class="w3-row">
       <div class="w3-col m3 l3">
-        <div class="item">Wohnen</div>
-        <p class="img__description">This image looks super neat.</p>
+        <div id="hover1" class="item">Wohnen</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Soziokratie</div>
+        <div id="hover2" class="item">Soziokratie</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Gemeinschafts-Philosophie</div>
+        <div id="hover3" class="item">Gemeinschafts-Philosophie</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Begegnungsort</div>
+        <div id="hover4" class="item hover-text">Begegnungsort</div>
       </div>
       <div class="w3-col m4 l4">
-        <div class="item">Natur- & Klimaschutz</div>
+        <div id="hover5" class="item hover-text">Natur- & Klimaschutz</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Kunst & Kultur</div>
+        <div id="hover6" class="item hover-text">Kunst & Kultur</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Transformative Bildung und Partizipation</div>
+        <div id="hover7" class="item hover-text">Transformative Bildung und Partizipation</div>
       </div>
       <div class="w3-col m3 l3">
-        <div class="item">Grüner Tourismus</div>
+        <div id="hover8" class="item hover-text">Grüner Tourismus</div>
       </div>
       <div class="w3-col m4 l4">
-        <div class="item">Zuwachs, Unterstützung, Kontakt</div>
+        <div id="hover9" class="item">Zuwachs, Unterstützung, Kontakt</div>
       </div>
     </div>
-
-
-
   </div>
 
 
 
   <script>
+    $(document).ready(function() {
+     // $('#hover1').attr('data-hover-text', 'This is the hover text');
+     // $('#hover2').attr('data-hover-text', 'This is the hover textasdwasdw');
+     // $('#hover3').attr('data-hover-text', 'This is the hover text');
+      $('#hover4').attr('data-hover-text', 'Soziokulturelle Dorfscheune, Einbindung Gemeinde & Umgebung');
+      $('#hover5').attr('data-hover-text', 'Permakultur, ökologische Landwirtschaft, Renaturierung, nachhaltige Sanierung → Nutzung vorhandener Bausubstanz, Energie) vllt noch Agro-forst?');
+      $('#hover6').attr('data-hover-text', 'Festivals, Veranstaltungen, Kunsthandwerk…');
+      $('#hover7').attr('data-hover-text', 'Kinder und Jugendliche!');
+      $('#hover8').attr('data-hover-text', 'Cafe, Gästehäuser…');
+     // $('#hover9').attr('data-hover-text', 'This is the hover text');
+    });
+    </script>
+
+    <script>
+
 
     function scrollTo(id){
     	window.scroll({
