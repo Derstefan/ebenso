@@ -18,8 +18,31 @@ body {
       font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
     }
   }
+  .title-pic {
+    background-image: url('../pics/ebenso/ebenso.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top 23%;
+    filter: hue-rotate(30deg);
+    text-align: center;
+  }
 
+  .title h1 {
+    color: white;
+    margin-top: 20px;
+    font-size: 7.1vw;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
 
+  .title p{
+    color: white;
+    font-size: 5.8vw;
+    text-align: center;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  @media only screen and (min-width: 1080px) {
   .title h1 {
     color: white;
     margin-top: 20px;
@@ -34,45 +57,14 @@ body {
     text-align: center;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
-
-
-
-  .colortitle {
-    color: white;
-    margin-top: 20px;
-    font-size: 4.6vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  .colorparagraph {
-    color: white;
-    font-size: 2.5vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  
-  .colortext {
-    color: white;
-    font-size: 1.6vw;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
 
 
 
-  .title-pic {
-    background-image: url('../pics/ebenso/ebenso.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top 23%;
-    filter: hue-rotate(30deg);
-    text-align: center;
-  }
+
+
+
+
 
   .video-background {
     position: relative;
@@ -126,11 +118,21 @@ body {
 
   .das-sind-wir-section .text {
     color: white;
+    font-size: 4.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+  .das-sind-wir-section .text {
+    color: white;
     font-size: 2.5vw;
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
+}
 
 
   .der-kern-section {
@@ -139,19 +141,155 @@ body {
     text-align: center;
   }
 
+  .der-kern-section .colortitle {
+    color: white;
+    margin-top: 20px;
+    font-size: 8.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  
+  .der-kern-section .colorparagraph {
+    color: white;
+    font-size: 5.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+  
+  
+  .der-kern-section .colortext {
+    color: white;
+    font-size: 3.6vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+
+
+  @media only screen and (min-width: 1080px) {
+  .der-kern-section .colortitle {
+    color: white;
+    margin-top: 20px;
+    font-size: 4.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  
+  .der-kern-section .colorparagraph {
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+  
+  
+  .der-kern-section .colortext {
+    color: white;
+    font-size: 1.6vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+  }
+
+
+
+
+
+
+
+
+
   .bilder-section {
     background-color:rgb(27, 27, 85);
     padding: 50px;
     text-align: center;
   }
 
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Maintain aspect ratio */
+  }
+  
+  .gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+
+
   .entstehung-section {
     background-color:rgb(255, 255, 255);
     padding: 50px;
     text-align: center;
+    display: block;
+    float: inline-start;
   }
 
 
+  .entstehung-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 7.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .entstehung-section .text {
+    color: black;
+    font-size: 4.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  @media only screen and (min-width: 1080px) {
   .entstehung-section .title {
     color: black;
     margin-top: 20px;
@@ -169,28 +307,137 @@ body {
     margin: 0 auto;
     max-width: 1400px;
   }
+  }
 
 
   .projekte-section {
-    background-color:rgb(27, 27, 85);
+    background-color:rgb(255, 255, 255);
     padding: 50px;
     text-align: center;
+  }
+  .projekte-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 7.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .projekte-section .text {
+    color: black;
+    font-size: 4.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  @media only screen and (min-width: 1080px) {
+  .projekte-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 3.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .projekte-section .text {
+    color: black;
+    font-size: 2.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
   }
   
-
-  .pauscha-section {
+  .divider {
     background-color:rgb(27, 27, 85);
     padding: 50px;
     text-align: center;
   }
+
+  .pauscha-section {
+    background-color:rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+  }
+
+  .pauscha-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 7.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+  .pauscha-section .title2{
+    color: black;
+    margin-top: 20px;
+    font-size: 7.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .pauscha-section .text {
+    color: black;
+    font-size: 4.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  @media only screen and (min-width: 1080px) {
+  .pauscha-section .title {
+    color: black;
+    margin-top: 20px;
+    font-size: 3.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  .pauscha-section .title2 {
+    color: black;
+    margin-top: 20px;
+    font-size: 3.6vw;
+    display: inline;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+    
+  .pauscha-section .text {
+    color: black;
+    font-size: 2.0vw;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  }
+
+
+
+
 
 
   .keimzelle-section {
-    background-color:rgba(199, 73, 196, 0.82);
+    background-color:rgba(199, 73, 196, 0.32);
     padding: 50px;
     text-align: center;
   }
 
+  .keimzelle-section .title {
+    color: white;
+    margin-top: 20px;
+    font-size: 5.6vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  @media only screen and (min-width: 1080px) {
   .keimzelle-section .title {
     color: white;
     margin-top: 20px;
@@ -199,7 +446,7 @@ body {
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
-
+  }
   .keimzelle-section .item {
     color: white;
     margin-top: 20px;
@@ -227,7 +474,7 @@ body {
     background-color: #0f0f0f;
     color: #fff;
     border-radius: 20px;
-    opacity: 0.2;
+    opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
   }
   
