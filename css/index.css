@@ -22,7 +22,10 @@ body {
     background-image: url('../pics/ebenso/ebenso.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top 23%;
+    background-position: center top 27%;
+    background-repeat: no-repeat;
+    background-color: #1e324d;
+    background-size: 1500px; /* Maximum width value */
     filter: hue-rotate(30deg);
     text-align: center;
   }
@@ -242,7 +245,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #ff00ff88;
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease;
