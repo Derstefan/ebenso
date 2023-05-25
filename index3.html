@@ -22,7 +22,7 @@
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li style="margin-left: 20px;"></li>
+        <li style="margin-left: 50px;"></li>
         <li><a href="#ebenso">EBENSO</a></li>
         <li><a href="#wir">WIR</a></li>
         <li><a href="#pauscha">PAUSCHA</a></li>
@@ -97,7 +97,7 @@
     
     <div class="colortitle">Der Kern,</div>
     <div class="colorparagraph">mit dem alles begann</div>
-    <div class="colortext">setzt sich zusammen aus einer bunten Gruppe von Menschen unterschiedlichen Alters, Herkünften und Professionen. Darunter psychologische Fachkräfte, Therapeuth*innen, Umweltmanager*innen, Ärzte, Architekturschaffende, Handwerkende, Toningenieur*innen, Sozialarbeitende, Physiotherapeut*innen und Veranstaltungsschaffende.</div>
+    <div class="colortext">setzt sich zusammen aus einer bunten Gruppe von Menschen unterschiedlichen Alters, Herkünften und Professionen. Darunter psychologische Fachkräfte, Therapeut*innen, Umweltmanager*innen, Ärzte, Architekturschaffende, Handwerkende, Toningenieur*innen, Sozialarbeitende, Physiotherapeut*innen und Veranstaltungsschaffende.</div>
   </div>
 
   
@@ -202,7 +202,7 @@
     <div class="title2">Gemeinschaft. </div>
     
     <br/><br/>
-    <div class="title">AKTUELLES/VERANSTALTUNGEN</div>
+    <div class="title2">AKTUELLES/VERANSTALTUNGEN</div>
 
     <div class="gallery">
       <div class="gallery-item">
@@ -237,12 +237,7 @@
         <img src="pics/pauscha/5.jpg" alt="Image 3">
         <div class="overlay">Mouse over text 3</div>
       </div>
-      <div class="gallery-item">
-        <img src="pics/pauscha/6.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
-      </div>
     </div>
-
 </div>
 
 
@@ -285,6 +280,19 @@
 
 
   <script>
+
+
+        let $root = $('html, body');
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                }, 500);
+                return false;
+            });
+        });
+
+
     $(document).ready(function() {
      // $('#hover1').attr('data-hover-text', 'This is the hover text');
      // $('#hover2').attr('data-hover-text', 'This is the hover textasdwasdw');
@@ -296,11 +304,6 @@
       $('#hover8').attr('data-hover-text', 'Cafe, Gästehäuser…');
      // $('#hover9').attr('data-hover-text', 'This is the hover text');
     });
-    </script>
-
-    <script>
-
-
     function scrollTo(id){
     	window.scroll({
         top: document.getElementById(id).offsetTop,

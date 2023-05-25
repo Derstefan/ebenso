@@ -79,7 +79,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -2;
+    z-index: -3;
   }
   
   .video-background .scroll-content {
@@ -211,7 +211,6 @@ body {
 
   .bilder-section {
     background-color:rgb(27, 27, 85);
-    padding: 50px;
     text-align: center;
   }
 
@@ -219,7 +218,6 @@ body {
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 10px;
   }
   
   .gallery-item {
@@ -265,7 +263,6 @@ body {
 
   .entstehung-section {
     background-color:rgb(255, 255, 255);
-    padding: 50px;
     text-align: center;
     display: block;
     float: inline-start;
@@ -360,7 +357,6 @@ body {
 
   .pauscha-section {
     background-color:rgb(255, 255, 255);
-    padding: 50px;
     text-align: center;
   }
 
@@ -375,7 +371,7 @@ body {
   .pauscha-section .title2{
     color: black;
     margin-top: 20px;
-    font-size: 7.6vw;
+    font-size: 5.6vw;
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -402,7 +398,7 @@ body {
   .pauscha-section .title2 {
     color: black;
     margin-top: 20px;
-    font-size: 3.6vw;
+    font-size: 2.6vw;
     display: inline;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
