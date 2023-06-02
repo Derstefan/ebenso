@@ -1,68 +1,45 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>Ebenso e.V.</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/index.css" type="text/css" rel="stylesheet" />
-    <link href="css/header.css" type="text/css" rel="stylesheet" />
-    <script src="scripts/layout.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <head>
+        <title>Ebenso e.V.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/index.css" type="text/css" rel="stylesheet" />
+        <link href="css/header.css" type="text/css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="pics/logoTemp.jpg" style="height: 60px;"></a>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li style="margin-left: 50px;"></li>
+                    <li><a href="#ebenso">EBENSO</a></li>
+                    <li><a href="#wir">WIR</a></li>
+                    <li><a href="#pauscha">PAUSCHA</a></li>
+                    <li><a href="#">LANGE.WEILE</a></li>
+                    <li><a href="#">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </header>
 
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <div class="logo">
-        <a href="index.html"><img src="pics/logoTemp.jpg" style="height: 60px;"></a>
-      </div>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li style="margin-left: 50px;"></li>
-        <li><a href="#ebenso">EBENSO</a></li>
-        <li><a href="#wir">WIR</a></li>
-        <li><a href="#pauscha">PAUSCHA</a></li>
-        <li><a href="#">LANGE.WEILE</a></li>
-        <li><a href="#">KONTAKT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:4000px;margin-top:0px">
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:4000px;margin-top:0px">
   
-  <!-- Bild -->
-  <section class="title-pic">
-    <div>
-      <br/><br/>
-      <div class="title">
-      <h1 style="margin-top: 0px;">ebenso e.V.</h1>
-      <br><br><br><br><br/>
-
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-      <br><br><br/>
-
-    </div>
-  </section>
+        <!-- Bild -->
+        <div id="title-pic" class="row">
+            <h1 id="title">ebenso e.V.</h1>
+        </div>
 
   <!-- Das sind wir section?? -->
-  <div id="wir" class="das-sind-wir-section">
+  <div id="wir" class="das-sind-wir-section row">
     <br><br><br/>
     <div class="text"><i>"Ein Leben in Gemeinschaft<br>
       Leben, aber nicht allein<br>
@@ -75,15 +52,16 @@
 
 
   <!-- Video -->
-  <div id="video" class="video-background">
-    <video id="myVideo"  autoplay loop muted>
-      <source src="pics/file.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="scroll-content">
-     <br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-  </div>
+        <div class="row">
+            <div id="video" class="video-background">
+
+                <video id="wirvideo" autoplay loop muted>
+                    <source src="pics/file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
   
   <!-- Der Kern -->
   <div id="kern" class="der-kern-section">
@@ -106,39 +84,66 @@
   <div class="gallery">
     <div class="gallery-item">
       <img src="pics/wir/ahmed.png" alt="Image 1">
-      <div class="overlay">Mouse over text 1</div>
+      <div class="overlay">
+        <h1>AHMED</h1>
+        <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/ella.png" alt="Image 2">
-      <div class="overlay">Mouse over text 2</div>
+      <div class="overlay">
+          <h1>ELLA</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/mori.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>MORITZ</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/henning.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>HENNING</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/chris.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>CHRIS</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/name.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>NAME</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/name2.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>NAME</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/name3.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>NAME</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="pics/wir/name4.png" alt="Image 3">
-      <div class="overlay">Mouse over text 3</div>
+      <div class="overlay">
+          <h1>NAME</h1>
+          <p>Beschreibungstext</p>
+      </div>
     </div>
   </div>
 
@@ -207,35 +212,59 @@
     <div class="gallery">
       <div class="gallery-item">
         <img src="pics/pauscha/1.jpg" alt="Image 1" style="width:100%">
-        <div class="overlay">Mouse over text 1</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/2.jpg" alt="Image 2">
-        <div class="overlay">Mouse over text 2</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/3.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/7.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/8.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/9.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/4.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
       <div class="gallery-item">
         <img src="pics/pauscha/5.jpg" alt="Image 3">
-        <div class="overlay">Mouse over text 3</div>
+        <div class="overlay">
+            <h1>NAME</h1>
+            <p>Beschreibungstext</p>
+        </div>
       </div>
     </div>
 </div>
@@ -315,7 +344,6 @@
       video.playbackRate = 0.4;
       video.play();
   </script>
-</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
