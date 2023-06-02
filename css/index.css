@@ -389,32 +389,35 @@ body {
     margin: 0 auto;
     max-width: 1400px;
   }
-  @media only screen and (min-width: 1080px) {
-  .pauscha-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: 3.6vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
 
-  .pauscha-section .title2 {
-    color: black;
-    margin-top: 20px;
-    font-size: 2.6vw;
-    display: inline;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+  @media only screen and (min-width: 1080px) {
+
+      .pauscha-section .title {
+        color: black;
+        margin-top: 20px;
+        font-size: 3.6vw;
+        text-align: center;
+        display: inline-block;
+        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+      }
+
+      .pauscha-section .title2 {
+        color: black;
+        margin-top: 20px;
+        font-size: 2.6vw;
+        display: inline;
+        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+      }
 
     
-  .pauscha-section .text {
-    color: black;
-    font-size: 2.0vw;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
+      .pauscha-section .text {
+        color: black;
+        font-size: 2.0vw;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1400px;
+      }
+
   }
 
 
@@ -472,7 +475,7 @@ body {
     transform: translateX(-50%);
     padding: 18px;
     background-color: #0f0f0f;
-    color: #fff;
+    color: #ffffff;
     border-radius: 20px;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
@@ -481,4 +484,46 @@ body {
   .hover-text:hover::after {
     opacity: 1;
   }
-  
+
+#keimzelle {
+    background-image: url(../pics/backgrounds/marble.png);
+}
+
+#bubblearea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.bubble {
+    text-anchor: middle;
+    alignment-baseline: central;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.bubblename {
+    display: block;
+}
+
+.bubbledetail {
+    display: none;
+}
+
+.bubble:hover {
+    r: 100px;
+}
+
+    .bubble:hover circle {
+        fill: #ffffff;
+        transition: fill 0.3s ease-in-out;
+        r: 100px;
+        transition: revert 0.3s ease-in-out;
+    }
+
+    .bubble:hover .bubbledetail {
+        display: block;
+    }
+
+.bubble:hover .bubblename {
+    display: none;
+}
