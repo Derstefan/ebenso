@@ -486,7 +486,7 @@ body {
   }
 
 #keimzelle {
-    background-image: url(../pics/backgrounds/ebenso_marmor.png);
+    background-color: var(--ci-06);
 }
 
 #bubblearea {
@@ -499,17 +499,18 @@ body {
 }
 
 .bubble {
-    text-anchor: middle;
-    alignment-baseline: central;
     font-weight: bold;
-    font-family: sans-serif;
-    height: 100px;
-    width: 100px;
+/*    height: 100px;
+    width: 100px;*/
     margin: 10px;
-}
-
-.bubblename {
-    display: block;
+    background-image: url(../pics/backgrounds/kreis_weiss.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .bubbledetail {
@@ -517,19 +518,12 @@ body {
 }
 
 .bubble:hover {
-    r: 100px;
+    background-image: url(../pics/backgrounds/ebenso_marmor.png);
 }
 
-    .bubble:hover circle {
-        fill: #ffffff;
-        transition: fill 0.3s ease-in-out;
-        r: 100px;
-        transition: revert 0.3s ease-in-out;
-    }
-
-    .bubble:hover .bubbledetail {
-        display: block;
-    }
+.bubble:hover .bubbledetail {
+    display: block;
+}
 
 .bubble:hover .bubblename {
     display: none;
