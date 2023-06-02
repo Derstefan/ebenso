@@ -486,12 +486,16 @@ body {
   }
 
 #keimzelle {
-    background-image: url(../pics/backgrounds/marble.png);
+    background-image: url(../pics/backgrounds/ebenso_marmor.png);
 }
 
 #bubblearea {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .bubble {
@@ -499,6 +503,9 @@ body {
     alignment-baseline: central;
     font-weight: bold;
     font-family: sans-serif;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
 }
 
 .bubblename {
