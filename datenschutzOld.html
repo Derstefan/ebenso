@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <title>Ebenso e.V.</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/index.css" type="text/css" rel="stylesheet" />
-    <link href="css/header.css" type="text/css" rel="stylesheet" />
-    <script src="scripts/layout.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<html lang="en">
+<head>
+<title>Ebenso e.V.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <div class="logo">
-        <a href="index3.html"><img src="pics/logoTemp.jpg" style="height: 60px;"></a>
-      </div>
-    </nav>
-  </header>
+
+
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:4000px;margin-top:0px">
-  
+<div class="w3-content" style="max-width:2000px">
+
+  <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <a href="index.html"><i class="fa fa-angle-left" style="width:30px">&nbsp;&nbsp;&nbsp;zurück...</i></a>
     <h2 class="w3-wide w3-center">Datenschutz</h2><br><br>
 
     <h5 class="w3-wide w3-center">Haftungsausschluss - Haftung für Inhalte</h5>
@@ -49,9 +45,16 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 </p>
 <p class="w3-opacity w3-center">Quelle: Disclaimer von eRecht24</p>
   </div>
+  
+
+
+
+<!-- End Page Content -->
+</div>
+
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
   <a href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
   <a href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;&nbsp;<br>
   © <i class="fa ">2023 ebenso e.V</i><br>
@@ -59,5 +62,35 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 
   
 </footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
 </body>
 </html>

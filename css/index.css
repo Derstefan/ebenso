@@ -1,3 +1,7 @@
+
+
+
+
 body {  
   margin: 0;
   padding: 0;
@@ -24,7 +28,7 @@ body {
     background-size: cover;
     background-position: center top 27%;
     background-repeat: no-repeat;
-    background-color: #1e324d;
+    background-color: #6a8bce;
     background-size: 1500px; /* Maximum width value */
     filter: hue-rotate(30deg);
     text-align: center;
@@ -64,7 +68,29 @@ body {
 
 
 
+  .das-sind-wir-section {
+    background-color:#1e324d;
+    padding: 50px;
+    text-align: center;
+  }
 
+  .das-sind-wir-section .text {
+    color: white;
+    font-size: 4.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+
+  @media only screen and (min-width: 1080px) {
+  .das-sind-wir-section .text {
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    display: inline-block;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+  }
+}
 
 
 
@@ -97,49 +123,8 @@ body {
 
 
 
-
-  .video-container {
-    top: 0;
-    bottom: 0;
-    text-align: center;
-    z-index: -2;
-  }
-
-  .video-container video {
-    min-width: 10%;
-    width: auto;
-    height: auto;
-  }
-
-
-
-  .das-sind-wir-section {
-    background-color:rgb(27, 27, 85);
-    padding: 50px;
-    text-align: center;
-  }
-
-  .das-sind-wir-section .text {
-    color: white;
-    font-size: 4.5vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  @media only screen and (min-width: 1080px) {
-  .das-sind-wir-section .text {
-    color: white;
-    font-size: 2.5vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-}
-
-
   .der-kern-section {
-    background-color:rgb(27, 27, 85);
+    background-color:#1e324d;
     padding: 50px;
     text-align: center;
   }
@@ -169,7 +154,6 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
 
 
@@ -200,7 +184,6 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
   }
   }
 
@@ -213,7 +196,7 @@ body {
 
 
   .bilder-section {
-    background-color:rgb(27, 27, 85);
+    background-color:#1e324d;
     text-align: center;
   }
 
@@ -245,7 +228,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ff00ff88;
+    background-color: #9b96e888;
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -353,13 +336,13 @@ body {
   }
   
   .divider {
-    background-color:rgb(27, 27, 85);
+    background-color:#1e324d;
     padding: 50px;
     text-align: center;
   }
 
   .pauscha-section {
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     text-align: center;
   }
 
