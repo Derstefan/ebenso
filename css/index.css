@@ -1,24 +1,50 @@
+:root {
+    --logoeffect: 1.5px 1.5px #b6ebfb, -1.5px -1.5px #ffb3b3;
+    --transparentwhite: #ffffffaa;
+
+    /* Farbcodes aus der CI */
+    --ci-01: #9b96e8;
+    --ci-02: #1e324d;
+    --ci-03: #929491;
+    --ci-04: #6a8bce;
+    --ci-05: #76a0b8;
+    --ci-06: #62615f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {  
   margin: 0;
   padding: 0;
-  font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
+  font-family: Lato, sans-serif;
 }
   .mySlides {display: none}
 
+.row {
+    padding: 20px;
+}
 
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
 
   @media only screen and (min-width: 1080px) {
     p {
-      font-size: 20px;
-      font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
+        font-size: 20px;
+        font-family: Lato, sans-serif;
     }
     h1 {
       font-size: 40px;
-      font-family:'Amatic SC, Aboreto, Advent Pro, Alegreya Sans';
+      font-family: Lato, sans-serif;
     }
   }
-  .title-pic {
+
+  #title-pic {
     background-image: url('../pics/ebenso/ebenso.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -28,90 +54,45 @@ body {
     background-size: 1500px; /* Maximum width value */
     filter: hue-rotate(30deg);
     text-align: center;
+    height: 1000px;
   }
 
-  .title h1 {
+#title {
     color: white;
     margin-top: 20px;
     font-size: 7.1vw;
     text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  .title p{
-    color: white;
-    font-size: 5.8vw;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+    text-shadow: var(--logoeffect);
+}
 
   @media only screen and (min-width: 1080px) {
-  .title h1 {
-    color: white;
-    margin-top: 20px;
-    font-size: 5.1vw;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+    
+      #title {
+        color: white;
+        margin-top: 20px;
+        font-size: 5.1vw;
+        text-align: center;
+        text-shadow: var(--logoeffect);
+        }
   }
 
-  .title p{
-    color: white;
-    font-size: 3.8vw;
-    text-align: center;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  }
-
-
-
-
-
-
-
-
-  .video-background {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .video-background video {
+#wirvideo {
     position: fixed;
-    top: 0;
-    left: 0;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    z-index: -3;
-  }
-  
-  .video-background .scroll-content {
-    position: absolute;
     top: 0;
     left: 0;
-    overflow-y: scroll;
-  }
-
-
-
-
-
-
-
-  .video-container {
-    top: 0;
-    bottom: 0;
-    text-align: center;
     z-index: -2;
-  }
+}
 
-  .video-container video {
-    min-width: 10%;
-    width: auto;
-    height: auto;
-  }
+#video {
+    height: 500px;
+}
 
-
+#bilder {
+    background-color: #ffffff;
+}
 
   .das-sind-wir-section {
     background-color:rgb(27, 27, 85);
@@ -213,7 +194,7 @@ body {
 
 
   .bilder-section {
-    background-color:rgb(27, 27, 85);
+    /*background-color:rgb(27, 27, 85);*/
     text-align: center;
   }
 
@@ -222,13 +203,20 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
-  
-  .gallery-item {
+
+.gallery-item {
     position: relative;
     width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Maintain aspect ratio */
-  }
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ff00ff77;
+}
   
   .gallery-item img {
     position: absolute;
@@ -239,28 +227,41 @@ body {
     object-fit: cover;
   }
   
-  .gallery-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff00ff88;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  
-  .gallery-item:hover .overlay {
-    opacity: 1;
-  }
 
+    .gallery-item:hover h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+    }
 
+    .gallery-item:hover p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-item h1 {
+        display: none;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .gallery-item p {
+        display: none;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .gallery-item:hover img {
+        mix-blend-mode: multiply;
+        z-index: 0;
+        position: absolute;
+    }
+
+    .gallery-item .overlay {
+        position: absolute;
+        z-index: 1;
+        padding: 40px;
+    }
 
 
 
@@ -388,32 +389,35 @@ body {
     margin: 0 auto;
     max-width: 1400px;
   }
-  @media only screen and (min-width: 1080px) {
-  .pauscha-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: 3.6vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
 
-  .pauscha-section .title2 {
-    color: black;
-    margin-top: 20px;
-    font-size: 2.6vw;
-    display: inline;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+  @media only screen and (min-width: 1080px) {
+
+      .pauscha-section .title {
+        color: black;
+        margin-top: 20px;
+        font-size: 3.6vw;
+        text-align: center;
+        display: inline-block;
+        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+      }
+
+      .pauscha-section .title2 {
+        color: black;
+        margin-top: 20px;
+        font-size: 2.6vw;
+        display: inline;
+        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+      }
 
     
-  .pauscha-section .text {
-    color: black;
-    font-size: 2.0vw;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
+      .pauscha-section .text {
+        color: black;
+        font-size: 2.0vw;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1400px;
+      }
+
   }
 
 
@@ -471,7 +475,7 @@ body {
     transform: translateX(-50%);
     padding: 18px;
     background-color: #0f0f0f;
-    color: #fff;
+    color: #ffffff;
     border-radius: 20px;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
@@ -480,4 +484,47 @@ body {
   .hover-text:hover::after {
     opacity: 1;
   }
-  
+
+#keimzelle {
+    background-color: var(--ci-06);
+}
+
+#bubblearea {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.bubble {
+    font-weight: bold;
+/*    height: 100px;
+    width: 100px;*/
+    margin: 10px;
+    background-image: url(../pics/backgrounds/kreis_weiss.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bubbledetail {
+    display: none;
+}
+
+.bubble:hover {
+    background-image: url(../pics/backgrounds/ebenso_marmor.png);
+}
+
+.bubble:hover .bubbledetail {
+    display: block;
+}
+
+.bubble:hover .bubblename {
+    display: none;
+}
