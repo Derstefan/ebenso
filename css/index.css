@@ -9,6 +9,14 @@
     --ci-04: #6a8bce;
     --ci-05: #76a0b8;
     --ci-06: #62615f;
+
+    --size-1:7.6vw;
+    --size-2:5.1vw;
+    --size-3:4.0vw;
+    --size-4:3.1vw;
+    --size-5:2.0vw;
+
+
 }
 
 * {
@@ -18,7 +26,7 @@
 body {  
   margin: 0;
   padding: 0;
-  font-family: Lato, sans-serif;
+  font-family: Inter, sans-serif;
 }
   .mySlides {display: none}
 
@@ -36,11 +44,11 @@ body {
   @media only screen and (min-width: 1080px) {
     p {
         font-size: 20px;
-        font-family: Lato, sans-serif;
+        font-family: Inter, sans-serif;
     }
     h1 {
       font-size: 40px;
-      font-family: Lato, sans-serif;
+      font-family: Inter, sans-serif;
     }
   }
 
@@ -50,7 +58,7 @@ body {
     background-size: cover;
     background-position: center top 27%;
     background-repeat: no-repeat;
-    background-color: #1e324d;
+    background-color: var(--ci-05);
     background-size: 1500px; /* Maximum width value */
     filter: hue-rotate(30deg);
     text-align: center;
@@ -60,7 +68,7 @@ body {
 #title {
     color: white;
     margin-top: 20px;
-    font-size: 7.1vw;
+    font-size: var(--size-1);
     text-align: center;
     text-shadow: var(--logoeffect);
 }
@@ -70,7 +78,7 @@ body {
       #title {
         color: white;
         margin-top: 20px;
-        font-size: 5.1vw;
+        font-size: var(--size-2);
         text-align: center;
         text-shadow: var(--logoeffect);
         }
@@ -95,14 +103,14 @@ body {
 }
 
   .das-sind-wir-section {
-    background-color:rgb(27, 27, 85);
+    background-color:var(--ci-02);
     padding: 50px;
     text-align: center;
   }
 
   .das-sind-wir-section .text {
     color: white;
-    font-size: 4.5vw;
+    font-size: var(--size-3);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -111,7 +119,7 @@ body {
   @media only screen and (min-width: 1080px) {
   .das-sind-wir-section .text {
     color: white;
-    font-size: 2.5vw;
+    font-size: var(--size-4);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -120,7 +128,7 @@ body {
 
 
   .der-kern-section {
-    background-color:rgb(27, 27, 85);
+    background-color:var(--ci-02);
     padding: 50px;
     text-align: center;
   }
@@ -128,7 +136,7 @@ body {
   .der-kern-section .colortitle {
     color: white;
     margin-top: 20px;
-    font-size: 8.6vw;
+    font-size: var(--size-1);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -137,7 +145,7 @@ body {
   
   .der-kern-section .colorparagraph {
     color: white;
-    font-size: 5.5vw;
+    font-size: var(--size-1);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -159,7 +167,7 @@ body {
   .der-kern-section .colortitle {
     color: white;
     margin-top: 20px;
-    font-size: 4.6vw;
+    font-size: var(--size-3);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -168,7 +176,7 @@ body {
   
   .der-kern-section .colorparagraph {
     color: white;
-    font-size: 2.5vw;
+    font-size: var(--size-4);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -177,7 +185,7 @@ body {
   
   .der-kern-section .colortext {
     color: white;
-    font-size: 1.6vw;
+    font-size: var(--size-5);
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -276,7 +284,7 @@ body {
   .entstehung-section .title {
     color: black;
     margin-top: 20px;
-    font-size: 7.6vw;
+    font-size: var(--size-1);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -285,7 +293,7 @@ body {
     
   .entstehung-section .text {
     color: black;
-    font-size: 4.0vw;
+    font-size: var(--size-3);
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -294,7 +302,7 @@ body {
   .entstehung-section .title {
     color: black;
     margin-top: 20px;
-    font-size: 3.6vw;
+    font-size: var(--size-4);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -303,7 +311,7 @@ body {
     
   .entstehung-section .text {
     color: black;
-    font-size: 2.0vw;
+    font-size: var(--size-5);
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -319,7 +327,7 @@ body {
   .projekte-section .title {
     color: black;
     margin-top: 20px;
-    font-size: 7.6vw;
+    font-size: var(--size-1);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -328,7 +336,7 @@ body {
     
   .projekte-section .text {
     color: black;
-    font-size: 4.0vw;
+    font-size: var(--size-3);
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -346,7 +354,7 @@ body {
     
   .projekte-section .text {
     color: black;
-    font-size: 2.0vw;
+    font-size: var(--size-5);
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
@@ -354,7 +362,7 @@ body {
   }
   
   .divider {
-    background-color:rgb(27, 27, 85);
+    background-color:var(--ci-02);
     padding: 50px;
     text-align: center;
   }
@@ -367,7 +375,7 @@ body {
   .pauscha-section .title {
     color: black;
     margin-top: 20px;
-    font-size: 7.6vw;
+    font-size: var(--size-1);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -375,7 +383,7 @@ body {
   .pauscha-section .title2{
     color: black;
     margin-top: 20px;
-    font-size: 5.6vw;
+    font-size: var(--size-2);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -395,7 +403,7 @@ body {
       .pauscha-section .title {
         color: black;
         margin-top: 20px;
-        font-size: 3.6vw;
+        font-size: var(--size-4);
         text-align: center;
         display: inline-block;
         text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -404,7 +412,7 @@ body {
       .pauscha-section .title2 {
         color: black;
         margin-top: 20px;
-        font-size: 2.6vw;
+        font-size: var(--size-5);
         display: inline;
         text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
       }
@@ -412,7 +420,7 @@ body {
     
       .pauscha-section .text {
         color: black;
-        font-size: 2.0vw;
+        font-size: var(--size-5);
         text-align: center;
         margin: 0 auto;
         max-width: 1400px;
@@ -434,7 +442,7 @@ body {
   .keimzelle-section .title {
     color: white;
     margin-top: 20px;
-    font-size: 5.6vw;
+    font-size: var(--size-2);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -444,7 +452,7 @@ body {
   .keimzelle-section .title {
     color: white;
     margin-top: 20px;
-    font-size: 2.6vw;
+    font-size: var(--size-5);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
@@ -527,4 +535,4 @@ body {
 
 .bubble:hover .bubblename {
     display: none;
-}
+} 
