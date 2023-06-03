@@ -318,12 +318,20 @@ body {
   }
   }
 
+  @media only screen and (min-width: 1080px) {
+  .projekte-section {
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 80px;
+  }
+}
 
   .projekte-section {
     background-color:rgb(255, 255, 255);
-    padding: 50px;
     text-align: center;
   }
+
+
   .projekte-section .title {
     color: black;
     margin-top: 20px;
@@ -497,14 +505,25 @@ body {
     background-color: var(--ci-06);
 }
 
+
+
 #bubblearea {
-    display: grid;
-    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Automatically fit the columns based on available space */
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 100px; /* Add a gap between the bubbles */
+  text-align:center;
 }
+
+@media (max-width: 600px) {
+  .bubble {
+    width: 100%; /* Set the width of the bubbles to 100% on small screens */
+  }
+}
+
 
 .bubble {
     font-weight: bold;
