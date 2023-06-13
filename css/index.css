@@ -1,7 +1,8 @@
 :root {
     --logoeffect: 1.5px 1.5px #b6ebfb, -1.5px -1.5px #ffb3b3;
     --transparentwhite: #ffffffaa;
-
+    --default-font: Manrope;
+    --title-picture: url('../pics/ebenso/ebenso_quer.jpg');
     /* Farbcodes aus der CI */
     --ci-01: #9b96e8;
     --ci-02: #1e324d;
@@ -9,14 +10,19 @@
     --ci-04: #6a8bce;
     --ci-05: #76a0b8;
     --ci-06: #62615f;
-
-    --size-1:7.6vw;
-    --size-2:5.1vw;
-    --size-3:4.0vw;
-    --size-4:3.1vw;
-    --size-5:2.0vw;
-
-
+    --ci-sek-01: #cc98e6;
+    --ci-sek-02: #cd6b98;
+    --ci-sek-03: #cd6bbc;
+    --ci-sek-04: #cda96b;
+    --ci-sek-05: #e69c98;
+    --ci-sek-06: #cd6b6b;
+    --ci-sek-07: #ffb683;
+    --ci-sek-08: #4b1f47;
+    --size-1: 7.6vw;
+    --size-2: 5.1vw;
+    --size-3: 4.0vw;
+    --size-4: 3.1vw;
+    --size-5: 2.0vw;
 }
 
 * {
@@ -26,7 +32,7 @@
 body {  
   margin: 0;
   padding: 0;
-  font-family: Inter, sans-serif;
+  font-family: var(--default-font), sans-serif;
 }
   .mySlides {display: none}
 
@@ -44,19 +50,19 @@ body {
   @media only screen and (min-width: 1080px) {
     p {
         font-size: 20px;
-        font-family: Inter, sans-serif;
+        font-family: var(--default-font), sans-serif;
     }
     h1 {
-      font-size: 40px;
-      font-family: Inter, sans-serif;
+        font-size: 40px;
+        font-family: var(--default-font), sans-serif;
     }
   }
 
   #title-pic {
-    background-image: url('../pics/ebenso/ebenso.jpg');
+    background-image: var(--title-picture);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top 27%;
+    background-position: center top 64%;
     background-repeat: no-repeat;
     background-color: var(--ci-05);
     background-size: 1500px; /* Maximum width value */
@@ -70,7 +76,7 @@ body {
     margin-top: 20px;
     font-size: var(--size-1);
     text-align: center;
-    text-shadow: var(--logoeffect);
+    /*text-shadow: var(--logoeffect);*/
 }
 
   @media only screen and (min-width: 1080px) {
@@ -80,7 +86,7 @@ body {
         margin-top: 20px;
         font-size: var(--size-2);
         text-align: center;
-        text-shadow: var(--logoeffect);
+        text-shadow: 2px 1px #000000;;
         }
   }
 
@@ -103,35 +109,56 @@ body {
 }
 
   .das-sind-wir-section {
-    background-color:var(--ci-02);
+    background-color:var(--ci-05);
     padding: 50px;
     text-align: center;
+    height: 100%;
   }
 
   .das-sind-wir-section .text {
     color: white;
-    font-size: var(--size-3);
-    text-align: center;
+    font-size: var(--size-5);
+    text-align: left;
     display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+    /*text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;*/
   }
 
   @media only screen and (min-width: 1080px) {
   .das-sind-wir-section .text {
-    color: white;
-    font-size: var(--size-4);
-    text-align: center;
+    color: var(--ci-02);
+    font-size: var(--size-5);
+    text-align: left;
     display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+    line-height: 26px;
+    
   }
 }
 
 
-  .der-kern-section {
-    background-color:var(--ci-02);
-    padding: 50px;
-    text-align: center;
-  }
+.der-kern-section {
+    background-color: var(--ci-02);
+    padding: 200px;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .der-kern-section h1 {
+        color: var(--ci-sek-05);
+        font-size: var(--size-3);
+    }
+
+    .der-kern-section h1 span {
+        font-size: var(--size-4);
+    }
+
+.der-kern-section p {
+    color: var(--ci-sek-05);
+    line-height: 30px;
+    font-size: var(--size-5);
+    text-align: left;
+}
 
   .der-kern-section .colortitle {
     color: white;
