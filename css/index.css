@@ -25,6 +25,14 @@
     --size-5: 2.0vw;
 }
 
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+
+}
+
 * {
     box-sizing: border-box;
 }
@@ -58,18 +66,17 @@ body {
     }
   }
 
-  #title-pic {
+#title-pic {
     background-image: var(--title-picture);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top 64%;
+    background-position: left 45% top 64%;
     background-repeat: no-repeat;
     background-color: var(--ci-05);
-    background-size: 1500px; /* Maximum width value */
     filter: hue-rotate(30deg);
     text-align: center;
     height: 1000px;
-  }
+}
 
 #title {
     color: white;
@@ -108,38 +115,28 @@ body {
     background-color: #ffffff;
 }
 
-  .das-sind-wir-section {
-    background-color:var(--ci-05);
-    padding: 50px;
-    text-align: center;
-    height: 100%;
-  }
-
-  .das-sind-wir-section .text {
-    color: white;
-    font-size: var(--size-5);
-    text-align: left;
-    display: inline-block;
-    /*text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;*/
-  }
-
-  @media only screen and (min-width: 1080px) {
-  .das-sind-wir-section .text {
-    color: var(--ci-02);
-    font-size: var(--size-5);
-    text-align: left;
-    display: inline-block;
-    line-height: 26px;
-    
-  }
+[class*="-section"] {
+    min-height: 100vh;
 }
+
+.das-sind-wir-section {
+    background-color: var(--ci-05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .das-sind-wir-section .text {
+        color: var(--ci-02);
+        font-size: var(--size-5);
+        line-height: var(--size-5);
+    }
 
 
 .der-kern-section {
+    padding: 0px 200px;
     background-color: var(--ci-02);
-    padding: 200px;
     display: flex;
-    height: 800px;
     justify-content: center;
     flex-direction: column;
 }
@@ -153,83 +150,14 @@ body {
         font-size: var(--size-4);
     }
 
-.der-kern-section p {
-    color: var(--ci-sek-05);
-    line-height: 30px;
-    font-size: var(--size-5);
-    text-align: left;
-}
-
-  .der-kern-section .colortitle {
-    color: white;
-    margin-top: 20px;
-    font-size: var(--size-1);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  
-  .der-kern-section .colorparagraph {
-    color: white;
-    font-size: var(--size-1);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  
-  
-  .der-kern-section .colortext {
-    color: white;
-    font-size: 3.6vw;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-
-
-  @media only screen and (min-width: 1080px) {
-  .der-kern-section .colortitle {
-    color: white;
-    margin-top: 20px;
-    font-size: var(--size-3);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-  
-  .der-kern-section .colorparagraph {
-    color: white;
-    font-size: var(--size-4);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  
-  
-  .der-kern-section .colortext {
-    color: white;
-    font-size: var(--size-5);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  }
-
-
-
-
-
-
-
-
+    .der-kern-section p {
+        color: var(--ci-sek-05);
+        line-height: var(--size-5);
+        font-size: var(--size-5);
+        text-align: left;
+    }
 
   .bilder-section {
-    /*background-color:rgb(27, 27, 85);*/
     text-align: center;
   }
 
@@ -243,7 +171,6 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-
     display: flex;
     justify-content: center;
     align-content: center;
@@ -252,7 +179,7 @@ body {
     align-items: center;
     background-color: #ff00ff77;
 }
-  
+
   .gallery-item img {
     position: absolute;
     top: 0;
@@ -261,7 +188,6 @@ body {
     height: 100%;
     object-fit: cover;
   }
-  
 
     .gallery-item:hover h1 {
         display: flex;
@@ -299,59 +225,39 @@ body {
     }
 
 
+.entstehung-section {
+    padding: 0px 200px;
+    background-color: var(--ci-sek-08);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-  .entstehung-section {
-    background-color:rgb(255, 255, 255);
-    text-align: center;
-    display: block;
-    float: inline-start;
-  }
+    .entstehung-section h1 {
+        color: var(--ci-01);
+        font-size: var(--size-3);
+    }
 
-
-  .entstehung-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: var(--size-1);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-    
-  .entstehung-section .text {
-    color: black;
-    font-size: var(--size-3);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-  @media only screen and (min-width: 1080px) {
-  .entstehung-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: var(--size-4);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-    
-  .entstehung-section .text {
-    color: black;
-    font-size: var(--size-5);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-  }
-
+    .entstehung-section p {
+        color: var(--ci-01);
+        line-height: var(--size-5);
+        font-size: var(--size-5);
+        text-align: left;
+    }
 
   .projekte-section {
-    background-color:rgb(255, 255, 255);
-    padding: 50px;
+    background-color:var(--ci-06);
     text-align: center;
+    padding: 50px 0px;
   }
-  .projekte-section .title {
+
+.projekte-section h1.title {
+    color: var(--ci-sek-04);
+    font-size: var(--size-3);
+    margin: 10px auto 50px auto;
+}
+
+  /*.projekte-section .title {
     color: black;
     margin-top: 20px;
     font-size: var(--size-1);
@@ -386,7 +292,7 @@ body {
     margin: 0 auto;
     max-width: 1400px;
   }
-  }
+  }*/
   
   .divider {
     background-color:var(--ci-02);
@@ -562,4 +468,4 @@ body {
 
 .bubble:hover .bubblename {
     display: none;
-} 
+}
