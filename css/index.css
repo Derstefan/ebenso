@@ -165,6 +165,7 @@ body {
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: #ffffff;
   }
 
 .gallery-item {
@@ -245,125 +246,35 @@ body {
         text-align: left;
     }
 
-  .projekte-section {
-    background-color:var(--ci-06);
+.projekte-smallsection {
+    background-color: var(--ci-05);
     text-align: center;
-    padding: 50px 0px;
-  }
-
-.projekte-section h1.title {
-    color: var(--ci-sek-04);
-    font-size: var(--size-3);
-    margin: 10px auto 50px auto;
+    padding: 50px 0px 50px 0px;
 }
 
-  /*.projekte-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: var(--size-1);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-
-    
-  .projekte-section .text {
-    color: black;
+.projekte-smallsection h1 {
+    color: var(--ci-02);
     font-size: var(--size-3);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-  @media only screen and (min-width: 1080px) {
-  .projekte-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: 3.6vw;
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+}
 
-    
-  .projekte-section .text {
-    color: black;
-    font-size: var(--size-5);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-  }*/
-  
   .divider {
     background-color:var(--ci-02);
     padding: 50px;
     text-align: center;
   }
 
-  .pauscha-section {
-    background-color:rgb(255, 255, 255);
-    text-align: center;
-  }
+.pauscha-section {
+    background-color: var(--ci-02);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-  .pauscha-section .title {
-    color: black;
-    margin-top: 20px;
-    font-size: var(--size-1);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  .pauscha-section .title2{
-    color: black;
-    margin-top: 20px;
-    font-size: var(--size-2);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+.pauscha-section h1, .pauscha-section p {
+    padding: 0px 200px;
+    color: var(--ci-sek-05);
 
-    
-  .pauscha-section .text {
-    color: black;
-    font-size: 4.0vw;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-
-  @media only screen and (min-width: 1080px) {
-
-      .pauscha-section .title {
-        color: black;
-        margin-top: 20px;
-        font-size: var(--size-4);
-        text-align: center;
-        display: inline-block;
-        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-      }
-
-      .pauscha-section .title2 {
-        color: black;
-        margin-top: 20px;
-        font-size: var(--size-5);
-        display: inline;
-        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-      }
-
-    
-      .pauscha-section .text {
-        color: black;
-        font-size: var(--size-5);
-        text-align: center;
-        margin: 0 auto;
-        max-width: 1400px;
-      }
-
-  }
-
-
-
-
+}
 
 
   .keimzelle-section {
@@ -426,13 +337,17 @@ body {
     opacity: 1;
   }
 
-#keimzelle {
-    background-color: var(--ci-06);
+.keimzelle-section {
+    background-color: var(--ci-sek-08);
 }
+
+    .keimzelle-section h1 {
+        color: var(--ci-01);
+    }
 
 #bubblearea {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -441,8 +356,6 @@ body {
 
 .bubble {
     font-weight: bold;
-/*    height: 100px;
-    width: 100px;*/
     margin: 10px;
     background-image: url(../pics/backgrounds/kreis_weiss.png);
     background-size: cover;
@@ -454,7 +367,7 @@ body {
     align-items: center;
 }
 
-.bubbledetail {
+.bubble-detail {
     display: none;
 }
 
@@ -462,10 +375,31 @@ body {
     background-image: url(../pics/backgrounds/ebenso_marmor.png);
 }
 
-.bubble:hover .bubbledetail {
+.bubble:hover .bubble-detail {
     display: block;
 }
 
-.bubble:hover .bubblename {
+.bubble:hover .bubble-name {
     display: none;
+}
+
+.bubble .bubble-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: 2px solid white;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 30px;
+    background-color: #929491ee;
+    margin: auto;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.bubble-modal p{
+    margin-bottom: 10px;
 }
