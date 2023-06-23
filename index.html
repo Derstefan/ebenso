@@ -10,6 +10,7 @@
     <link href="css/index.css" type="text/css" rel="stylesheet" />
     <link href="css/header.css" type="text/css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/page.js"></script>
 </head>
     <body>
         <header class="header">
@@ -221,81 +222,88 @@
 
 
   <!-- Keimzelle -->
-  <div id="keimzelle" class="keimzelle-section">
-    <h1>Ein Dorf als Keimzelle...</h1>
-    <div id="bubblearea">
+            <div id="keimzelle" class="keimzelle-section">
+                <h1>Ein Dorf als Keimzelle...</h1>
+                <div id="bubblearea">
 
-        <!-- Werte -->
-        <div class="bubble" style="width: 150px; height:150px;">
-            <p class="bubble-name">Soziokratie</p>
-            <p class="bubble-detail">Soziokratie</p>
-            <div class="bubble-modal"></div>
-        </div>
+                    <!-- Werte -->
+                    <div class="bubble c150 werte">
+                        <p class="bubble-name">Soziokratie</p>
+                        <p class="bubble-detail">Soziokratie</p>
+                        <div class="bubble-modal"></div>
+                    </div>
 
-        <div class="bubble" style="width: 180px; height:180px;">
-            <p class="bubble-name">Gemeinschafts-<br />Philosophie</p>
-            <p class="bubble-detail">Gemeinschafts-<br />Philosophie</p>
-            <div class="bubble-modal"></div>
-        </div>
+                    <div class="bubble c180 werte">
+                        <p class="bubble-name">Gemeinschafts-<br />Philosophie</p>
+                        <p class="bubble-detail">Gemeinschafts-<br />Philosophie</p>
+                        <div class="bubble-modal"></div>
+                    </div>
 
-        <div class="bubble" style="width: 100px; height:100px;">
-            <p class="bubble-name">Vision</p>
-            <p class="bubble-detail">Vision</p>
-            <div class="bubble-modal">
-                <p>Kultur ist immer im Wandel und so auch die Werte, die mit ihr einhergehen.</p>
-                <p>Wir wollen dazu eine klare Position beziehen und den Wandel aktiv mitgestalten. Es soll ein Ort der Vernetzung entstehen. Ein Ort, welcher Kreativität, Abenteuerlust, Neugierde und Offenheit entfacht; der Menschen sich auf verschiedensten Ebenen weiterentwickeln und transformieren lässt - verbunden mit der Natur und in Gemeinschaft.</p>
-                <p>Wir verstehen uns nicht als Aussteiger*innen, sondern wollen einen Ort in Einbezug der Gemeinde und Umgebung erschaffen, um progressiven Austausch zu fördern:</p>
-                <p>Als regionaler Bildungs- und Begegnungsort soll unser Projekt für den ländlichen Strukturwandel und neues Denken stehen. Hier darf sozial-ökologische Transformation gelebt werden.</p>
-                <p>Unsere Bottom-line drückt dies in Kürze aus: Vorwärts zurück zum Wesentlichen.</p>
+                    <div class="bubble c100 werte" onclick="showModal(this);">
+                        <p class="bubble-name">Vision</p>
+                        <p class="bubble-detail">Vision</p>
+                        <div class="bubble-modal">
+                            <p>Kultur ist immer im Wandel und so auch die Werte, die mit ihr einhergehen.</p>
+                            <p>Wir wollen dazu eine klare Position beziehen und den Wandel aktiv mitgestalten. Es soll ein Ort der Vernetzung entstehen. Ein Ort, welcher Kreativität, Abenteuerlust, Neugierde und Offenheit entfacht; der Menschen sich auf verschiedensten Ebenen weiterentwickeln und transformieren lässt - verbunden mit der Natur und in Gemeinschaft.</p>
+                            <p>Wir verstehen uns nicht als Aussteiger*innen, sondern wollen einen Ort in Einbezug der Gemeinde und Umgebung erschaffen, um progressiven Austausch zu fördern:</p>
+                            <p>Als regionaler Bildungs- und Begegnungsort soll unser Projekt für den ländlichen Strukturwandel und neues Denken stehen. Hier darf sozial-ökologische Transformation gelebt werden.</p>
+                            <p>Unsere Bottom-line drückt dies in Kürze aus: Vorwärts zurück zum Wesentlichen.</p>
+                        </div>
+                    </div>
+
+                    <div class="bubble c190 werte">
+                        <p class="bubble-name">Natur- und<br />Klimaschutz</p>
+                        <p class="bubble-detail">Renaturierung,<br />nachhaltige Sanierung</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <!-- Der Ort und die Projekte -->
+                    <div class="bubble c220 ort">
+                        <p class="bubble-name">Begegnungsort</p>
+                        <p class="bubble-detail">Soziokulturelle Dorfscheune,<br />Einbindung Gemeinde<br />& Umgebung</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <div class="bubble c150 ort">
+                        <p class="bubble-name">Wohnen</p>
+                        <p class="bubble-detail">Wohnen</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <div class="bubble c200 ort">
+                        <p class="bubble-name">Kunst &<br />Kultur</p>
+                        <p class="bubble-detail">Festivals,<br />Veranstaltungen,<br />Kunsthandwerk</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <div class="bubble c220 ort">
+                        <p class="bubble-name">Transformative Bildung <br />und Partizipation</p>
+                        <p class="bubble-detail">Kinder und<br />Jugendliche</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <div class="bubble c150 ort">
+                        <p class="bubble-name">Grüner<br />Tourismus</p>
+                        <p class="bubble-detail">Café,<br />Gästehäuser</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                    <div class="bubble c190 ort">
+                        <p class="bubble-name">Permakultur</p>
+                        <p class="bubble-detail">Ökologische<br />Landwirtschaft,<br />Agro-Forst</p>
+                        <div class="bubble-modal"></div>
+                    </div>
+
+                </div>
+
+                <div id="modal">
+                    <div class="modal-button">
+                        <button onclick="closeModal();">&#10006;</button>
+                    </div>
+                    <div id="modal-content"></div>
+                </div>
+
             </div>
-        </div>
-
-        <div class="bubble" style="width: 190px; height:190px;">
-            <p class="bubble-name">Natur- und<br />Klimaschutz</p>
-            <p class="bubble-detail">Renaturierung,<br />nachhaltige Sanierung</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <!-- Der Ort und die Projekte -->
-        <div class="bubble" style="width: 220px; height:220px;">
-            <p class="bubble-name">Begegnungsort</p>
-            <p class="bubble-detail">Soziokulturelle Dorfscheune,<br />Einbindung Gemeinde<br />& Umgebung</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <div class="bubble" style="width: 150px; height:150px;">
-            <p class="bubble-name">Wohnen</p>
-            <p class="bubble-detail">Wohnen</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <div class="bubble" style="width: 200px; height:200px;">
-            <p class="bubble-name">Kunst &<br />Kultur</p>
-            <p class="bubble-detail">Festivals,<br />Veranstaltungen,<br />Kunsthandwerk</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <div class="bubble" style="width: 220px; height:220px;">
-            <p class="bubble-name">Transformative Bildung <br />und Partizipation</p>
-            <p class="bubble-detail">Kinder und<br />Jugendliche</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <div class="bubble" style="width: 150px; height:150px;">
-            <p class="bubble-name">Grüner<br />Tourismus</p>
-            <p class="bubble-detail">Café,<br />Gästehäuser</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-        <div class="bubble" style="width: 190px; height:190px;">
-            <p class="bubble-name">Permakultur</p>
-            <p class="bubble-detail">Ökologische<br />Landwirtschaft,<br />Agro-Forst</p>
-            <div class="bubble-modal"></div>
-        </div>
-
-    </div>
-    
-  </div>
 
 
 

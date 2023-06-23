@@ -357,7 +357,6 @@ body {
 .bubble {
     font-weight: bold;
     margin: 10px;
-    background-image: url(../pics/backgrounds/kreis_weiss.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -365,6 +364,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    transition: all ease-in-out 0.5s;
 }
 
 .bubble-detail {
@@ -372,7 +372,7 @@ body {
 }
 
 .bubble:hover {
-    background-image: url(../pics/backgrounds/ebenso_marmor.png);
+    background-color: #ffffff!important;
 }
 
 .bubble:hover .bubble-detail {
@@ -383,7 +383,11 @@ body {
     display: none;
 }
 
-.bubble .bubble-modal {
+.bubble-modal{
+    display: none;
+}
+
+#modal {
     display: none;
     position: fixed;
     top: 50%;
@@ -397,9 +401,74 @@ body {
     background-color: #929491ee;
     margin: auto;
     text-align: left;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
-.bubble-modal p{
+#modal p{
     margin-bottom: 10px;
+}
+
+#modal .modal-button{
+    height: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#modal .modal-button button {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+    #modal .modal-button button:hover {
+        background-color: #ffffff88;
+    }
+
+.bubble.werte {
+    background-color: var(--ci-05);
+}
+
+.bubble.ort{
+    background-color: var(--ci-01);
+}
+
+.bubble.c100 {
+    clip-path: circle(50px at center);
+    width: 100px;
+    height: 100px;
+}
+
+.bubble.c150 {
+    clip-path: circle(75px at center);
+    width: 150px;
+    height: 150px;
+}
+
+.bubble.c180 {
+    clip-path: circle(90px at center);
+    width: 180px;
+    height: 180px;
+}
+
+.bubble.c190 {
+    clip-path: circle(95px at center);
+    width: 190px;
+    height: 190px;
+}
+
+.bubble.c200 {
+    clip-path: circle(100px at center);
+    width: 200px;
+    height: 200px;
+}
+
+.bubble.c220 {
+    clip-path: circle(110px at center);
+    width: 220px;
+    height: 220px;
 }
