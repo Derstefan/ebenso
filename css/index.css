@@ -23,6 +23,7 @@
     --size-3: 4.0vw;
     --size-4: 3.1vw;
     --size-5: 2.0vw;
+    --size-6: 1.0vw;
 }
 
 @media screen and (orientation:portrait) {
@@ -55,7 +56,7 @@ body {
     }
 
 
-  @media only screen and (min-width: 1080px) {
+/*  @media only screen and (min-width: 1080px) {
     p {
         font-size: 20px;
         font-family: var(--default-font), sans-serif;
@@ -65,7 +66,7 @@ body {
         font-family: var(--default-font), sans-serif;
     }
   }
-
+*/
 #title-pic {
     background-image: var(--title-picture);
     background-attachment: fixed;
@@ -86,7 +87,7 @@ body {
     /*text-shadow: var(--logoeffect);*/
 }
 
-  @media only screen and (min-width: 1080px) {
+/*  @media only screen and (min-width: 1080px) {
     
       #title {
         color: white;
@@ -95,7 +96,7 @@ body {
         text-align: center;
         text-shadow: 2px 1px #000000;;
         }
-  }
+  }*/
 
 #wirvideo {
     position: fixed;
@@ -119,6 +120,27 @@ body {
     min-height: 100vh;
 }
 
+[class*="-section"] h1{
+    font-size: var(--size-3);
+    padding: 0px 200px;
+}
+
+    [class*="-section"] p {
+        font-size: var(--size-5);
+        line-height: var(--size-5);
+        padding: 0px 200px;
+    }
+
+    [class*="-section"] ul {
+        font-size: var(--size-5);
+        padding: 0px 200px;
+    }
+
+    [class*="-section"] ul li{
+        font-size: var(--size-5);
+        list-style: inside;
+    }
+
 .das-sind-wir-section {
     background-color: var(--ci-05);
     display: flex;
@@ -134,7 +156,6 @@ body {
 
 
 .der-kern-section {
-    padding: 0px 200px;
     background-color: var(--ci-02);
     display: flex;
     justify-content: center;
@@ -143,7 +164,6 @@ body {
 
     .der-kern-section h1 {
         color: var(--ci-sek-05);
-        font-size: var(--size-3);
     }
 
     .der-kern-section h1 span {
@@ -152,8 +172,6 @@ body {
 
     .der-kern-section p {
         color: var(--ci-sek-05);
-        line-height: var(--size-5);
-        font-size: var(--size-5);
         text-align: left;
     }
 
@@ -190,7 +208,7 @@ body {
     object-fit: cover;
   }
 
-    .gallery-item:hover h1 {
+    .gallery-item:hover h2 {
         display: flex;
         justify-content: center;
         font-weight: 700;
@@ -201,7 +219,7 @@ body {
         justify-content: center;
     }
 
-    .gallery-item h1 {
+    .gallery-item h2 {
         display: none;
         width: 100%;
         color: #ffffff;
@@ -227,7 +245,6 @@ body {
 
 
 .entstehung-section {
-    padding: 0px 200px;
     background-color: var(--ci-sek-08);
     display: flex;
     justify-content: center;
@@ -236,13 +253,10 @@ body {
 
     .entstehung-section h1 {
         color: var(--ci-01);
-        font-size: var(--size-3);
     }
 
     .entstehung-section p {
         color: var(--ci-01);
-        line-height: var(--size-5);
-        font-size: var(--size-5);
         text-align: left;
     }
 
@@ -252,10 +266,10 @@ body {
     padding: 50px 0px 50px 0px;
 }
 
-.projekte-smallsection h1 {
-    color: var(--ci-02);
-    font-size: var(--size-3);
-}
+    .projekte-smallsection h1 {
+        color: var(--ci-02);
+        font-size: var(--size-3);
+    }
 
   .divider {
     background-color:var(--ci-02);
@@ -270,11 +284,16 @@ body {
     flex-direction: column;
 }
 
-.pauscha-section h1, .pauscha-section p {
-    padding: 0px 200px;
-    color: var(--ci-sek-05);
+    .pauscha-section h1 {
+        color: var(--ci-sek-05);
+        padding: 0px 200px;
 
-}
+    }
+
+    .pauscha-section p {
+        padding: 0px 200px;
+        color: var(--ci-sek-05);
+    }
 
 
   .keimzelle-section {
@@ -345,6 +364,18 @@ body {
         color: var(--ci-01);
     }
 
+.kulturraeume-section {
+    background-color: var(--ci-05);
+    color: var(--ci-02);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .kulturraeume-section h1 {
+        margin: 0;
+    }
+
 #bubblearea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -352,6 +383,7 @@ body {
     align-items: center;
     justify-items: center;
     align-content: center;
+    margin-top: 50px;
 }
 
 .bubble {
@@ -367,12 +399,18 @@ body {
     transition: all ease-in-out 0.5s;
 }
 
+    .bubble > p {
+        font-size: 15px;
+        line-height:15px;
+    }
+
 .bubble-detail {
     display: none;
 }
 
 .bubble:hover {
     background-color: #ffffff!important;
+    cursor: pointer;
 }
 
 .bubble:hover .bubble-detail {
@@ -386,48 +424,6 @@ body {
 .bubble-modal{
     display: none;
 }
-
-#modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    border: 2px solid white;
-    max-width: 90vw;
-    max-height: 90vh;
-    padding: 30px;
-    background-color: #929491ee;
-    margin: auto;
-    text-align: left;
-    overflow-y: auto;
-}
-
-#modal p{
-    margin-bottom: 10px;
-}
-
-#modal .modal-button{
-    height: 50px;
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-#modal .modal-button button {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 30px;
-    transition: all ease-in-out 0.5s;
-}
-
-    #modal .modal-button button:hover {
-        background-color: #ffffff88;
-    }
 
 .bubble.werte {
     background-color: var(--ci-05);
@@ -472,3 +468,47 @@ body {
     width: 220px;
     height: 220px;
 }
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: 2px solid white;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 30px;
+    background-color: #929491ee;
+    margin: auto;
+    text-align: left;
+    overflow-y: auto;
+}
+
+    #modal p {
+        margin-bottom: 10px;
+        font-size: var(--size-6);
+        padding: 0;
+    }
+
+    #modal .modal-button {
+        height: 50px;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+        #modal .modal-button button {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 30px;
+            transition: all ease-in-out 0.5s;
+        }
+
+            #modal .modal-button button:hover {
+                background-color: #ffffff88;
+            }
