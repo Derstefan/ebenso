@@ -399,6 +399,31 @@ font-style: italic;
         color: var(--ci-01);
     }
 
+    .spenden-section {
+        background-color: var(--ci-03);
+        color: var(--ci-02);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+        .spenden-section h1 {
+            margin: 0;
+        }
+
+
+.zuwachs-section {
+    background-color: var(--ci-01);
+    color: var(--ci-02);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .zuwachs-section h1 {
+        margin: 0;
+    }
+
 .kulturraeume-section {
     background-color: var(--ci-05);
     color: var(--ci-02);
@@ -411,17 +436,7 @@ font-style: italic;
         margin: 0;
     }
 
-    .spenden-section {
-        background-color: var(--ci-03);
-        color: var(--ci-02);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-        .spenden-section h1 {
-            margin: 0;
-        }
+
 
 #bubblearea {
     display: grid;

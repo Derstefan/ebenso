@@ -16,7 +16,7 @@
         <header class="header">
             <nav>
                 <div class="logo">
-                    <a href="index.html"><img src="pics/logo.jpg" style="height: 60px;"></a>
+                    <a href="index.html"><img src="pics/EBENSO EV.png" style="height: 60px;"></a>
                 </div>
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="menu-icon">&#9776;</label>
@@ -51,7 +51,7 @@
                 <div id="video" class="video-background">
 
                     <video id="wirvideo" autoplay loop muted>
-                        <source src="pics/file.mp4" type="video/mp4">
+                        <source src="pics/BrauhausGruppe.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
@@ -85,7 +85,7 @@
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="pics/wir/mori.JPG" alt="Image 3">
+                        <img src="pics/wir/Moritz.jpg" alt="Image 3">
                         <div class="overlay">
                             <h2>Moritz</h2>
                             <p></p>
@@ -118,7 +118,7 @@
                     <div class="gallery-item">
                         <img src="pics/wir/lena.jpeg" alt="Image 3">
                         <div class="overlay">
-                            <h2>Carina</h2>
+                            <h2>Lena</h2>
                             <p></p>
                         </div>
                     </div>
@@ -126,6 +126,13 @@
                         <img src="pics/wir/jan.jpg" alt="Image 3">
                         <div class="overlay">
                             <h2>Jan</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pics/wir/Steffi.jpg" alt="Image 3">
+                        <div class="overlay">
+                            <h2>Steffi</h2>
                             <p></p>
                         </div>
                     </div>
@@ -137,9 +144,11 @@
             <!-- Entstehung -->
             <div id="entstehung" class="entstehung-section">
                 <h1 class="title">Entstehung </h1>
+
                 <p>
                     Wir befinden uns seit 2020 in dem Prozess, einen Lebens- und Arbeitsort gemeinsam zu entwickeln. In diesem Zuge wurde der gemeinnützige ebenso e.V. gegründet. Um uns gemeinschaftlich zu organisieren, nutzen wir die Form der Soziokratie.
                 </p>
+
             </div>
 
             <div class="w3-row">
@@ -206,7 +215,12 @@
             <!-- Pauscha -->
             <div id="pauscha" class="pauscha-section">
                 <h1>Pauscha </h1>
-                <p>
+                <p style="padding-top: 10px;">Das Lebensgemeinschaftsprojekt  “Pauscha” widmet sich der Öffnung eines inklusiven und altersgemischten Lebensraums auf dem Land mit Wohnraum für etwa 80 Personen.
+                    Struktureller Wandel im ländlichen Raum darf hier ganzheitlich ge- und erlebt werden:
+                    </p>
+                    <p  style="padding-top: 30px;">Neben Wohnraum entstehen Arbeitsplätze, werden soziokulturelle Bildungsräume geschaffen sowie nachhaltige Landwirtschaft und Naturschutz betrieben.</p>
+                    <p  style="padding-top: 30px;">Als Verbindungsglied dieser Bereiche und wertvolles Tool der Vernetzung untereinander aber vor allem mit der örtlichen Gemeinde ist Kunst und Kultur zentrales Element unseres Lebensmodells.</p>
+                <p style="padding-top: 30px;">
                    Es soll ein Ort entstehen, mit dem Ziel, Menschen zusammenzubringen und zu verbinden.
                    Ein Ort, welcher Kreativität, Neugierde, Abenteuerlust und Offenheit entfacht und stärkt.
                    Der dazu führt, dass wir uns auf verschiedensten Ebenen weiterentwickeln und transformieren können, in <b>Gemeinschaft</b>.
@@ -351,10 +365,15 @@
                         </div>
                     </div>
 
-                    <div class="bubble c190 ort">
+                    <div class="bubble c190 ort" onclick="showModal(this);">
                         <p class="bubble-name">Permakultur</p>
                         <p class="bubble-detail">Ökologische<br />Landwirtschaft,<br />Agro-Forst</p>
-                        <div class="bubble-modal"></div>
+                        <div class="bubble-modal">
+                            <p>Permakultur, Agroforst und regenerative Landwirtschaft werden zentrale Bestandteile der regionalen Versorgung mit gesunden Lebensmitteln in Pauscha.  Indem wir lernen und verstehen, wie die Natur funktioniert, können wir ihre Prozesse nachbilden und Nahrungsmittel so anbauen, wie es vorgesehen ist: als Teil eines komplexen Systems vieler Pflanzen und Tiere. 
+                                </p>
+                                Der Hof soll ein Ort sein, an dem das  zusammenleben von Mensch, Tier und Pflanze im Einklang ist - ohne künstliche Pestizide, Dünger oder Antibiotika.
+                                <p></p>
+                        </div>
                     </div>
 
                 </div>
@@ -379,12 +398,26 @@ Hierbei sind wir auf Unterstützung angewiesen und für jegliche Hilfe sehr dank
                   <input type="number" id="donation-amount" step="0.01" min="0.01" placeholder="Betrag in EUR" required>
                   <button id="donate-btn">Jetzt spenden</button>
                 </div>-->
-                <div class="bank-details">
+                <div class="bank-details"  style="padding-top: 40px;">
                   <p style="text-decoration: underline; font-weight: bold;">Bankverbindung:</p>
                   <p>Kontoinhaber: Henning Mentzel</p>
                   <p>BIC: GENODEM1GLS</p>
                   <p>IBAN: DE69430609673025373801</p>
                 </div>
+            </div>
+
+            <div id="zuwachs" class="zuwachs-section">
+                <h1>Zuwachs</h1>
+                <p>Einzelpersonen</p>
+                    <p>
+                        Um zu wachsen, suchen wir gezielt weitere Pionier*innen des nachhaltigen Denkens und fachliche Expert*innen, um mit ihnen Hand in Hand das Projekt in Pauscha gemeinsam zu gestalten. 
+                    </p>
+                    <p>Konkret suchen wir aktuell Menschen mit folgenden Professionen: Landwirt*in, Handwerker*innen, Architekt*innen, Buchhalter*in</p>
+                    <p style="padding-top: 40px;">Gruppen</p>
+                    <p>
+                        Wir sind auf der Suche nach weiteren Gruppen, die für die Verwirklichung ihrer Projektidee nur noch einen Ort benötigen und sich unserem Projekt als ein soziokratischer Arbeitskreis anschließen möchten. 
+Wenn ihr Interesse daran habt, den Ort zu besuchen und uns kennenzulernen, meldet euch gerne und erzählt uns ein paar Worte über euch: hi@ebenso.org. 
+                    </p>
             </div>
 
             <div id="kulturraeume" class="kulturraeume-section">
@@ -396,6 +429,57 @@ Hierbei sind wir auf Unterstützung angewiesen und für jegliche Hilfe sehr dank
                     <li>Ebensoli</li>
                     <li>Detect-Classic-Festival</li>
                 </ul>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/1.jpeg" alt="Image 1" style="width:100%">
+                    <div class="overlay">
+                        <h2>Hoffest in Pauscha</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/hoffest.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <h2>Hoffest in Pauscha</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/hoffest2.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Hoffest in Pauscha</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/klangreise.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Klangreisen</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/krummel.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Krummeluse</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/landgang.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Landgang</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="pics/kulturraume/openairs.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <h2>Open Airs</h2>
+                        <p></p>
+                    </div>
+                </div>
             </div>
 
 
