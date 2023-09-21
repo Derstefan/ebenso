@@ -699,14 +699,15 @@ font-style: italic;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    border: 2px solid white;
     max-width: 90vw;
     max-height: 90vh;
     padding: 30px;
-    background-color: #929491ee;
+    background-color: var(--ci-02);
+    color: #ffffff;
     margin: auto;
     text-align: left;
     overflow-y: auto;
+    border-radius: 15px;
 }
 
     #modal p {
@@ -727,6 +728,7 @@ font-style: italic;
             line-height: 50px;
             background: none;
             border: none;
+            border-radius: 5px;
             color: #ffffff;
             font-size: 30px;
             transition: all ease-in-out 0.5s;
@@ -734,4 +736,8 @@ font-style: italic;
 
             #modal .modal-button button:hover {
                 background-color: #ffffff88;
+            }
+
+            #modal-header {
+                float: left;
             }
