@@ -34,6 +34,7 @@
     --size-2: 10vw;
     --size-3: 7.5vw;
     --size-4: 5.6vw;
+    --size-4_5: 5.2vw;
     --size-5: 4.2vw;
     --size-5_5: 3.2vw;
     --size-6: 2.5vw;
@@ -58,6 +59,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--default-font), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--default-font), sans-serif;
 }
   .mySlides {display: none}
 
@@ -91,7 +96,6 @@ body {
     background-repeat: no-repeat;
     background-color: var(--ci-05);
     filter: hue-rotate(30deg);
-    text-align: center;
     height: 100vh;
 }
 
@@ -141,6 +145,12 @@ body {
     padding: 0px 200px;
 }
 
+
+[class*="-section"] h2{
+    font-size: var(--size-4_5);
+    padding: 0px 200px;
+}
+
     [class*="-section"] p {
         font-size: var(--size-5);
         line-height: var(--size-5);
@@ -168,8 +178,8 @@ body {
 
     .das-sind-wir-section .text {
         color: var(--ci-02);
-        font-size: var(--size-5);
-        line-height: var(--size-5);
+        font-size: var(--size-4);
+        line-height: var(--size-4);
     }
 
 /* --------------------------------------------- DER KERN -----------------------------------*/
@@ -513,8 +523,9 @@ font-style: italic;
         .spenden-section h1 {
             margin: 0;
         }
-        .spenden-section h1 span {
+        .spenden-section h2 b {
             font-size: var(--size-5);
+
         }
 
 
