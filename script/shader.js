@@ -1,6 +1,5 @@
 // WebGL setup and animation loop for multiple canvases
 const canvasContainerElements = document.querySelectorAll("canvasContainer");
-console.log(canvasContainerElements);
 canvasContainerElements.forEach((canvasContainer) => {
     const canvas = canvasContainer.querySelector("canvas");
  const gl = canvas.getContext("webgl");

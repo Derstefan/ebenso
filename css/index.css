@@ -692,6 +692,8 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: row;
     align-items: center;
     transition: all ease-in-out 0.5s;
+    color: #1e324d;
+
 }
 
     .bubble > p {
@@ -720,13 +722,63 @@ h1,h2,h3,h4,h5,h6 {
     display: none;
 }
 
-.bubble.werte {
+.bubble.ci1 {
+    background-color: var(--ci-01);
+}
+
+.bubble.ci2{
+    background-color: var(--ci-02);
+}
+
+.bubble.ci3 {
+    background-color: var(--ci-03);
+}
+
+.bubble.ci4 {
+    background-color: var(--ci-04);
+}
+
+.bubble.ci5 {
     background-color: var(--ci-05);
 }
 
-.bubble.ort{
-    background-color: var(--ci-01);
+.bubble.ci6 {
+    background-color: var(--ci-06);
 }
+
+
+.bubble.cisek1 {
+    background-color: var(--ci-sek-01);
+}
+
+.bubble.cisek2{
+    background-color: var(--ci-sek-02);
+}
+
+.bubble.cisek3 {
+    background-color: var(--ci-sek-03);
+}
+
+.bubble.cisek4 {
+    background-color: var(--ci-sek-04);
+}
+
+.bubble.cisek5 {
+    background-color: var(--ci-sek-05);
+}
+
+.bubble.cisek6 {
+    background-color: var(--ci-sek-06);
+}
+
+.bubble.cisek7 {
+    background-color: var(--ci-sek-07);
+}
+
+.bubble.cisek8 {
+    background-color: var(--ci-sek-08);
+}
+
 
 .bubble.c100 {
     clip-path: circle(50px at center);
@@ -771,14 +823,15 @@ h1,h2,h3,h4,h5,h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    border: 2px solid white;
     max-width: 90vw;
     max-height: 90vh;
     padding: 30px;
-    background-color: #929491ee;
+    background-color: var(--ci-02);
+    color: var(--ci-sek-07);
     margin: auto;
     text-align: left;
     overflow-y: auto;
+    border-radius: 15px;
 }
 
     #modal p {
@@ -799,6 +852,7 @@ h1,h2,h3,h4,h5,h6 {
             line-height: 50px;
             background: none;
             border: none;
+            border-radius: 5px;
             color: #ffffff;
             font-size: 30px;
             transition: all ease-in-out 0.5s;
@@ -806,4 +860,8 @@ h1,h2,h3,h4,h5,h6 {
 
             #modal .modal-button button:hover {
                 background-color: #ffffff88;
+            }
+
+            #modal-header {
+                float: left;
             }
