@@ -19,9 +19,9 @@
     --ci-sek-06: #cd6b6b;
     --ci-sek-07: #ffb683;
     --ci-sek-08: #4b1f47;
-    --size-1: 7.6vw;
-    --size-2: 5.1vw;
-    --size-3: 4.0vw;
+    --size-1: 7.4vw;
+    --size-2: 4.9vw;
+    --size-3: 3.9vw;
     --size-4: 3.1vw;
     --size-4_5: 2.5vw;
     --size-5: 2.0vw;
@@ -61,6 +61,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--default-font), sans-serif;
+  background-color: var(--ci-04);
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -120,15 +122,6 @@ h1,h2,h3,h4,h5,h6 {
         }
   }*/
 
-#wirvideo {
-    position: fixed;
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -5;
-}
 
 
 
@@ -166,6 +159,38 @@ h1,h2,h3,h4,h5,h6 {
         font-size: var(--size-5);
         list-style: inside;
     }
+
+
+
+
+
+    #wirvideo {
+        position: fixed;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
+    
+    @media (max-width: 992px) {
+        #wirvideo {
+      
+        
+        width: 100vw;
+        height: 30vh;
+        top: 30vh;
+        left: 0;
+        z-index: -5;
+        }
+        .video-section{
+            min-height: 60vh;
+        }
+    
+    }
+
+
 
 .das-sind-wir-section {
     background-color: var(--ci-01);

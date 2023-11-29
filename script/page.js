@@ -27,3 +27,5 @@ function closeModal() {
     modalWindow.style.display = "none";
     modalContent.innerHTML = "";
 }
+
+
