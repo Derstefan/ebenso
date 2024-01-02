@@ -51,8 +51,8 @@
         <!-- Video -->
         <div class="video-section">
             <div id="video" class="video-background">
-
-                <video id="wirvideo" autoplay loop muted>
+                <div class="loading-spinner"></div>
+                <video class ="vid" id="wirvideo" autoplay loop muted>
                     <source src="pics/BrauhausGruppe.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -308,7 +308,7 @@
             <div id="bubblearea">
 
                 <!-- Werte -->
-                <div class="bubble c150 ci1" onclick="showModal(this);">
+                <div class="bubble c150 ci1">
                     <p class="bubble-name">Soziokratie</p>
                     <p class="bubble-detail">Soziokratie</p>
                     <div class="bubble-modal">
@@ -320,7 +320,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c180 cisek3" onclick="showModal(this);">
+                <div class="bubble c180 cisek3">
                     <p class="bubble-name">Gemeinschafts-<br />Philosophie</p>
                     <p class="bubble-detail">Gemeinschafts-<br />Philosophie</p>
                     <div class="bubble-modal">
@@ -337,7 +337,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c100 cisek7" onclick="showModal(this);">
+                <div class="bubble c100 cisek7">
                     <p class="bubble-name">Vision</p>
                     <p class="bubble-detail">Vision</p>
                     <div class="bubble-modal">
@@ -355,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c190 ci4" onclick="showModal(this);">
+                <div class="bubble c190 ci4">
                     <p class="bubble-name">Natur- und <br />Klimaschutz</p>
                     <p class="bubble-detail">Renaturierung,<br />nachhaltige Sanierung</p>
                     <div class="bubble-modal">
@@ -371,7 +371,7 @@
                 </div>
 
                 <!-- Der Ort und die Projekte -->
-                <div class="bubble c220 cisek2" onclick="showModal(this);">
+                <div class="bubble c220 cisek2">
                     <p class="bubble-name">Begegnungsort</p>
                     <p class="bubble-detail">Soziokulturelle Dorfscheune,<br />Einbindung Gemeinde<br />& Umgebung</p>
                     <div class="bubble-modal">
@@ -385,7 +385,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c150 cisek1" onclick="showModal(this);">
+                <div class="bubble c150 cisek1">
                     <p class="bubble-name">Wohnen</p>
                     <p class="bubble-detail">Wohnen</p>
                     <div class="bubble-modal">
@@ -401,7 +401,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c200 ci5" onclick="showModal(this);">
+                <div class="bubble c200 ci5">
                     <p class="bubble-name">Kunst & <br />Kultur</p>
                     <p class="bubble-detail">Festivals,<br />Veranstaltungen,<br />Kunsthandwerk</p>
                     <div class="bubble-modal">
@@ -411,7 +411,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c220 cisek2" onclick="showModal(this);">
+                <div class="bubble c220 cisek2">
                     <p class="bubble-name">Transformative Bildung <br />und Partizipation</p>
                     <p class="bubble-detail">Kinder und<br />Jugendliche</p>
                     <div class="bubble-modal">
@@ -424,7 +424,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c150 cisek3" onclick="showModal(this);">
+                <div class="bubble c150 cisek3">
                     <p class="bubble-name">Grüner <br />Tourismus</p>
                     <p class="bubble-detail">Café,<br />Gästehäuser</p>
                     <div class="bubble-modal">
@@ -441,7 +441,7 @@
                     </div>
                 </div>
 
-                <div class="bubble c190 ci5" onclick="showModal(this);">
+                <div class="bubble c190 ci5">
                     <p class="bubble-name">Permakultur</p>
                     <p class="bubble-detail">Ökologische<br />Landwirtschaft,<br />Agro-Forst</p>
                     <div class="bubble-modal">
@@ -462,9 +462,7 @@
 
             <div id="modal">
                 <div class="modal-button">
-
                     <h3 id="modal-header"></h3>
-                    <button onclick="closeModal();">&#10006;</button>
                 </div>
                 <div id="modal-content"></div>
             </div>
@@ -593,11 +591,6 @@
             </div>
         </div>
         <script>
-
-
-
-
-
             let $root = $('html, body');
             $(document).ready(function () {
                 $('a[href^="#"]').click(function () {
@@ -631,7 +624,58 @@
             video.playbackRate = 0.6;
             video.play();
         </script>
+        
+        <!-- Shader -->
         <script src="script/shader.js"></script>
+        
+        <!-- Loading Spinner für Videos-->
+        <script>
+
+            const videos = document.querySelectorAll(".vid");
+
+            videos.forEach(video => {
+
+                const spinner = video.parentElement.querySelector(".loading-spinner");
+
+                video.addEventListener("loadeddata", () => {
+                    spinner.style.display = "none";
+                });
+
+                video.addEventListener("waiting", () => {
+                    spinner.style.display = "block";
+                });
+
+            });
+
+        </script>
+
+        <!-- Modal beim Klick außerhalb schließen -->
+        <script>
+
+            const bubbles = document.querySelectorAll(".bubble");
+            const modal = document.getElementById("modal");
+
+            modal.style.display = "none";
+
+            bubbles.forEach(bubble => {
+                bubble.addEventListener("click", function () {
+                    if (modal.style.display == "none") {
+                        showModal(bubble);
+                    }
+                    else {
+                        closeModal();
+                    }
+                });
+            });
+
+            document.addEventListener("click", function (event) {
+                
+                if (!modal.contains(event.target) && !Array.from(bubbles).some(bubble => bubble.contains(event.target))) {
+                    modal.style.display = "none";
+                }
+            });
+
+        </script>
 
 
         <!-- Footer -->
