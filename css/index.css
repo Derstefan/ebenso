@@ -530,6 +530,26 @@ h1,h2,h3,h4,h5,h6 {
     }
 
 
+    .pauscha-video-sec {
+        background-color: var(--ci-02);
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    
+    .pauscha-video {
+        width: 80vw; /* Make the video fill its container */
+        height: 80vh; /* Set initial height to 0 for aspect ratio preservation */
+    }
+    
+    /* Optional: Add some styling to the video container on smaller screens */
+    @media only screen and (max-width: 1000px) {
+        .pauscha-video {
+            width: 100vw; /* Make the video fill its container */
+            height: 50vh; 
+        }
+    }
+
+
   .keimzelle-section {
     background-color:rgba(199, 73, 196, 0.32);
     padding: 50px;
