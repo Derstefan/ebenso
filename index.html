@@ -52,7 +52,7 @@
         <div class="video-section">
             <div id="video" class="video-background">
                 <div class="loading-spinner"></div>
-                <video class ="vid" id="wirvideo" autoplay loop muted>
+                <video class="vid" id="wirvideo" autoplay loop muted>
                     <source src="pics/BrauhausGruppe.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -248,6 +248,12 @@
                 untereinander aber vor allem mit der örtlichen Gemeinde ist Kunst und Kultur zentrales Element unseres
                 Lebensmodells.</p>
 
+
+
+        </div>
+        <div class="pauscha-video-sec">
+            <iframe class="pauscha-video" src="https://www.youtube.com/embed/nlUeH0-oEa4" frameborder="0"
+                allowfullscreen></iframe>
         </div>
         <div class="gallery">
             <div class="gallery-item">
@@ -299,11 +305,13 @@
                 Kreativität, Neugierde, Abenteuerlust und Offenheit entfacht. Der dazu führt, dass wir uns auf
                 verschiedensten Ebenen weiterentwickeln und neue Wege gehen.
             </p>
+
         </div>
 
 
         <!-- Keimzelle -->
         <div id="keimzelle" class="keimzelle-section">
+            <br>
             <h1>ein Ort für Ideen</h1>
             <div id="bubblearea">
 
@@ -505,7 +513,22 @@
                 <!-- <p style="text-decoration: underline; font-weight: bold;">Bankverbindung:</p> -->
                 <p>BIC: GENODEM1GLS</p>
                 <p>IBAN: DE69430609673025373801</p>
+                <br>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="business" value="hi@ebenso.org">
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="hidden" name="amount" value="50.00">
+
+                    <p>Spenden via PayPal:
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                            name="submit" title="Spenden via PayPal" alt="Donate with PayPal button">
+                    </p>
+                    <img alt="" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
             </div>
+
+
             <p style="padding-top: 50px;">Als gemeinnütziger Verein sind wir berechtigt, Spendenquittungen auszustellen.
             </p>
             <p style="padding-top: 30px;">Du kannst dir vorstellen, den Kauf des Objektes finanziell mit Direktkrediten
@@ -624,10 +647,10 @@
             video.playbackRate = 0.6;
             video.play();
         </script>
-        
+
         <!-- Shader -->
         <script src="script/shader.js"></script>
-        
+
         <!-- Loading Spinner für Videos-->
         <script>
 
@@ -669,7 +692,7 @@
             });
 
             document.addEventListener("click", function (event) {
-                
+
                 if (!modal.contains(event.target) && !Array.from(bubbles).some(bubble => bubble.contains(event.target))) {
                     modal.style.display = "none";
                 }
