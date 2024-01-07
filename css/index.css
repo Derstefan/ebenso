@@ -62,6 +62,7 @@ body {
   padding: 0;
   font-family: var(--default-font), sans-serif;
   background-color: var(--ci-04);
+  overflow-x: hidden;
 
 }
 
