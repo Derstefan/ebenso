@@ -242,12 +242,12 @@ h1,h2,h3,h4,h5,h6 {
           }
     
           .der-kern-section h1 {
-            padding: 0px 100px;
+            padding: 0px 40px;
     
         }
     
         .der-kern-section p {
-            padding: 0px 100px;
+            padding: 0px 40px;
         }
     }
 
@@ -354,12 +354,12 @@ h1,h2,h3,h4,h5,h6 {
           }
     
           .entstehung-section h1 {
-            padding: 0px 100px;
+            padding: 0px 40px;
     
         }
     
         .entstehung-section p {
-            padding: 0px 100px;
+            padding: 0px 40px;
         }
     }
 
@@ -448,7 +448,7 @@ h1,h2,h3,h4,h5,h6 {
 .projekte-smallsection {
     background-color: var(--ci-05);
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 40px 0px;
 }
 
     .projekte-smallsection h1 {
@@ -521,12 +521,12 @@ h1,h2,h3,h4,h5,h6 {
           }
     
           .pauscha-section h1 {
-            padding: 0px 100px;
+            padding: 0px 40px;
     
         }
     
         .pauscha-section p {
-            padding: 0px 100px;
+            padding: 0px 40px;
         }
     }
 
@@ -574,7 +574,7 @@ h1,h2,h3,h4,h5,h6 {
         flex-direction: column;
         align-items: flex-start; /* Align items (text) to the left */
         justify-content: center; /* Vertically center the items (text) */
-        padding: 0px 100px;
+        padding: 0px 40px;
 
     }
 }
@@ -638,6 +638,7 @@ h1,h2,h3,h4,h5,h6 {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        min-height: 140vh;
     }
     
         .spenden-section h1 {
@@ -659,12 +660,12 @@ h1,h2,h3,h4,h5,h6 {
               }
         
               .spenden-section h1 {
-                padding: 0px 100px;
+                padding: 0px 40px;
         
             }
         
             .spenden-section p {
-                padding: 0px 100px;
+                padding: 0px 40px;
             }
         }
 
@@ -675,6 +676,8 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: 140vh;
+
 }
 
     .zuwachs-section h1 {
@@ -691,11 +694,11 @@ h1,h2,h3,h4,h5,h6 {
           }
     
           .zuwachs-section h1 {
-            padding: 0px 100px;
+            padding: 0px 40px;
     
         }
         .zuwachs-section p {
-            padding: 0px 100px;
+            padding: 0px 40px;
         }
     }
     
@@ -722,11 +725,11 @@ h1,h2,h3,h4,h5,h6 {
           }
     
           .kulturraeume-section h1 {
-            padding: 0px 100px;
+            padding: 0px 40px;
     
         }
         .kulturraeume-section p {
-            padding: 0px 100px;
+            padding: 0px 40px;
         }
     }
 
