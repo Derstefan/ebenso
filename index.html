@@ -14,6 +14,9 @@
     <link href="css/header.css" type="text/css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.6/i18next.min.js"></script>
+    <script src="script/t.js" async></script>
+
 </head>
 
 <body>
@@ -26,14 +29,17 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
                 <li style="margin-left: 50px;"></li>
-                <li><a href="#wir">WIR</a></li>
-                <li><a href="#pauscha">PAUSCHA</a></li>
-                <li><a href="#spende">UNTERSTÜTZUNG</a></li>
-                <li><a href="#kulturraeume">KULTURRÄUME</a></li>
-                <li><a href="impressum.html">KONTAKT</a></li>
+                <li><a href="#wir"><span id="t_TWIR"></span></a></li>
+                <li><a href="#pauscha"><span id="t_TPAUSCHA"></span></a></li>
+                <li><a href="#spende"><span id="t_TUNTERSTÜTZUNG"></span></a></li>
+                <li><a href="#kulturraeume"><span id="t_TKULTURRÄUME"></span></a></li>
+                <li><a href="impressum.html"><span id="t_TKONTAKT"></span></a></li>
+
             </ul>
         </nav>
     </header>
+
+
 
     <!-- Page content -->
     <div class="" style="max-width:100vw;margin-top:0px;">
@@ -41,18 +47,21 @@
         <!-- Bild -->
         <div id="title-pic" class="row"></div>
 
+
         <!-- Das sind wir section?? -->
         <div class="das-sind-wir-section">
-            <div class="text quote">"Ein Leben in <b>Gemeinschaft</b> -
-                <br /><b>Leben</b>, aber nicht allein
-                <br />sondern <b>gemeinsam</b> statt einsam."
+
+            <div class="text quote"><span id="t_Ein Leben in"></span><b><span id="t_Gemeinschaft"></span></b> -
+                <br /><b><span id="t_Leben"></span></b><span id="t_aber nicht allein"></span>
+                <br /><span id="t_sondern"></span> <b><span id="t_gemeinsam"></span></b><span
+                    id="t_statt einsam"></span>
             </div>
         </div>
 
         <!-- Video -->
         <div class="video-section">
             <div id="video" class="video-background">
-                <div class="loading-spinner"></div>
+                <!-- <div class="loading-spinner"></div> -->
                 <video class="vid" id="wirvideo" autoplay loop muted>
                     <source src="pics/BrauhausGruppe.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -64,11 +73,8 @@
         <!-- Der Kern -->
         <div id="wir" class="der-kern-section">
             <div class="text-container">
-                <h1 class="title">Der Kern, <span>mit dem alles begann</span></h1>
-                <p>setzt sich zusammen aus einer bunten Gruppe von Menschen unterschiedlichen Alters, Herkünften und
-                    Professionen. Darunter psychologische Fachkräfte, Therapeut*innen, Umweltmanager*innen, Ärzte,
-                    Architekturschaffende, Handwerkende, Toningenieur*innen, Sozialarbeitende, Physiotherapeut*innen und
-                    Veranstaltungsschaffende.</p>
+                <h1 class="title"><span id="t_Der Kern"></span><span id="t_mit dem alles begann"></span></h1>
+                <p><span id="t_kerntext"></span></p>
             </div>
         </div>
 
@@ -173,12 +179,10 @@
 
         <!-- Entstehung -->
         <div id="entstehung" class="entstehung-section">
-            <h1 class="title">Entstehung </h1>
+            <h1 class="title"><span id="t_Entstehung"></span></h1>
 
             <p>
-                Wir befinden uns seit 2020 in dem Prozess, einen Lebens- und Arbeitsort gemeinsam zu entwickeln. In
-                diesem Zuge wurde der gemeinnützige ebenso e.V. gegründet. Um uns gemeinschaftlich zu organisieren,
-                nutzen wir die Form der Soziokratie.
+                <span id="t_entstehungstext"></span>
             </p>
 
         </div>
@@ -186,11 +190,13 @@
         <canvasContainer class="canvas-container" id="canvasContainer">
             <canvas id="canvas"></canvas>
             <div class="canvas-text-overlay">
-                <div class="canvas-text-block">"Wir machen es eben so! - steht für einen Willen etwas zu schaffen"</div>
-                <div class="canvas-text-block">"wie wollen wir leben? eben so!"</div>
-                <div class="canvas-text-block">"Ein Garten ebenso, wie das Leben ihn wachsen lässt. Nicht
-                    geradeso, sondern einfach ebenso."</div>
-                <div class="canvas-text-block">"Ebenso wie du"</div>
+                <div class="canvas-text-block"><span
+                        id="t_Wir machen es eben so! - steht für einen Willen etwas zu schaffen"></span></div>
+                <div class="canvas-text-block"><span id="t_wie wollen wir leben? eben so!"></span></div>
+                <div class="canvas-text-block"><span
+                        id="t_Ein Garten ebenso, wie das Leben ihn wachsen lässt. Nicht geradeso, sondern einfach ebenso."></span>
+                </div>
+                <div class="canvas-text-block"><span id="t_Ebenso wie du"></span></div>
             </div>
         </canvasContainer>
         <!--
@@ -259,15 +265,10 @@
         <!-- Pauscha -->
         <div id="pauscha" class="pauscha-section">
             <h1 style="padding-top: 100px;">Pauscha </h1>
-            <p style="padding-top: 10px;">Das Lebensgemeinschaftsprojekt “Pauscha” widmet sich der Öffnung eines
-                inklusiven und altersgemischten Lebensraums auf dem Land mit Wohnraum für etwa 80 Personen.
-                Struktureller Wandel im ländlichen Raum darf hier ganzheitlich ge- und erlebt werden:
-            </p>
-            <p style="padding-top: 30px;">Neben Wohnraum entstehen Arbeitsplätze, werden soziokulturelle Bildungsräume
-                geschaffen sowie nachhaltige Landwirtschaft und Naturschutz betrieben.</p>
-            <p style="padding-top: 30px;">Als Verbindungsglied dieser Bereiche und wertvolles Tool der Vernetzung
-                untereinander aber vor allem mit der örtlichen Gemeinde ist Kunst und Kultur zentrales Element unseres
-                Lebensmodells.</p>
+            <p style="padding-top: 10px;"><span id="t_Pauscha_Lebensraum"></span></p>
+            <p style="padding-top: 30px;"><span id="t_Arbeitsplätze_Bildungsräume_Landwirtschaft"></span></p>
+            <p style="padding-top: 30px;"><span id="t_Kunst_Kultur"></span></p>
+
 
 
 
@@ -321,171 +322,121 @@
             </div>
         </div>
         <div id="pauscha" class="pauscha-section">
-            <p>
-                Es soll ein Ort entstehen, mit dem Ziel, Menschen zusammenzubringen und zu verbinden. Ein Ort, welcher
-                Kreativität, Neugierde, Abenteuerlust und Offenheit entfacht. Der dazu führt, dass wir uns auf
-                verschiedensten Ebenen weiterentwickeln und neue Wege gehen.
-            </p>
-
+            <p><span id="t_Pauscha_Ort"></span></p>
         </div>
 
 
         <!-- Keimzelle -->
         <div id="keimzelle" class="keimzelle-section">
             <br>
-            <h1>ein Ort für Ideen</h1>
+            <h1><span id="t_ein Ort für Ideen"></span></h1>
             <div id="bubblearea">
 
                 <!-- Werte -->
                 <div class="bubble c150 ci1">
-                    <p class="bubble-name">Soziokratie</p>
-                    <p class="bubble-detail">Soziokratie</p>
+                    <p class="bubble-name"><span id="t_Soziokratie"></span></p>
+                    <p class="bubble-detail"><span id="t_Soziokratie"></span></p>
                     <div class="bubble-modal">
-                        <p>Unsere Gruppenentscheidungen basieren auf dem Konsentprinzip und sind durch die Soziokratie
-                            organisiert. Dabei gibt es offen gewählte Kreise für verschiedene Verantwortungsbereiche und
-                            im zentralen Kreis werden Grundsatzentscheide getroffen. Die Soziokratie fördert die
-                            Eigenverantwortung, die Mitbestimmung und das Gefühl der Mitverantwortung für das
-                            Gesamtprojekt.</p>
+                        <p><span id="t_Gruppenentscheidungen"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c180 cisek3">
-                    <p class="bubble-name">Gemeinschafts-<br />Philosophie</p>
-                    <p class="bubble-detail">Gemeinschafts-<br />Philosophie</p>
+                    <p class="bubble-name"><span id="t_Gemeinschafts-Philosophie"></span></p>
+                    <p class="bubble-detail"><span id="t_Gemeinschafts-Philosophie"></span></p>
                     <div class="bubble-modal">
-                        <p>Jeder Mensch bringt einen Mehrwert für die Gemeinschaft, dabei spielt Alter & Herkunft keine
-                            Rolle. Eine starke, gesunde Gemeinschaft zeigt sich daran, dass sie für alle Beteiligten
-                            eine Aufgabe findet. Ob das die Kinderbetreuung oder das Unkrautjäten ist, das Kartoffeln
-                            schnippeln oder Sahne schlagen, jeder Mensch hat und findet seine Aufgabe, wenn er sich mit
-                            der Gemeinschaft identifizieren kann.</p>
-                        <p>Folgende Werte liegen uns hierbei am Herzen: fehlerfreundlicher Umgang, Bewusstsein und
-                            Transparenz, Kreisarbeit, Freiraum, Stärken des Individuums durch die Gruppe, Toleranz,
-                            Integration.</p>
-                        <p>So möchten wir leben, inklusiv und lebensfroh, gemeinsam bejahend der Zukunft
-                            entgegenschreitend.</p>
+                        <p><span id="t_Gemeinschaftswert"></span></p>
+                        <p><span id="t_Gemeinschaftswerte_Folgende"></span></p>
+                        <p><span id="t_Visiontext"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c100 cisek7">
-                    <p class="bubble-name">Vision</p>
-                    <p class="bubble-detail">Vision</p>
+                    <p class="bubble-name"><span id="t_Vision"></span></p>
+                    <p class="bubble-detail"><span id="t_Vision"></span></p>
                     <div class="bubble-modal">
-                        <p>Kultur ist immer im Wandel und so auch die Werte, die mit ihr einhergehen.</p>
-                        <p>Wir wollen dazu eine klare Position beziehen und den Wandel aktiv mitgestalten. Es soll ein
-                            Ort der Vernetzung entstehen. Ein Ort, welcher Kreativität, Abenteuerlust, Neugierde und
-                            Offenheit entfacht; der Menschen sich auf verschiedensten Ebenen weiterentwickeln und
-                            transformieren lässt - verbunden mit der Natur und in Gemeinschaft.</p>
-                        <p>Wir verstehen uns nicht als Aussteiger*innen, sondern wollen einen Ort in Einbezug der
-                            Gemeinde und Umgebung erschaffen, um progressiven Austausch zu fördern:</p>
-                        <p>Als regionaler Bildungs- und Begegnungsort soll unser Projekt für den ländlichen
-                            Strukturwandel und neues Denken stehen. Hier darf sozial-ökologische Transformation gelebt
-                            werden.</p>
-                        <p>Unsere Bottom-line drückt dies in Kürze aus: Vorwärts zurück zum Wesentlichen.</p>
+                        <p><span id="t_Vision_Kultur"></span></p>
+                        <p><span id="t_Vision_Wir wollen dazu eine"></span></p>
+                        <p><span id="t_Vision_Wir verstehen uns nicht als"></span></p>
+                        <p><span id="t_Vision_Als regionaler Bildungs-"></span></p>
+                        <p><span id="t_Vision_Unsere Bottom-line drückt dies"></span></p>
                     </div>
                 </div>
+
 
                 <div class="bubble c190 ci4">
-                    <p class="bubble-name">Natur- und <br />Klimaschutz</p>
-                    <p class="bubble-detail">Renaturierung,<br />nachhaltige Sanierung</p>
+                    <p class="bubble-name"><span id="t_name_1901"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_1901"></span></p>
                     <div class="bubble-modal">
-                        <p>Wir möchten einen ökologisch wertvollen Raum schaffen, unseren Ressourcenverbrauch senken und
-                            unser Leben klimafreundlicher gestalten. Innovative, nachhaltige Konzepte und Ideen werden
-                            wir in den Bereichen Landwirtschaft, Bau und Energieversorgung umsetzen.</p>
-                        <p>Die Erhaltung vorhandener Arten und die Steigerung der Biodiversität sowie aktiver
-                            Humusaufbau und Hochwasserschutz sind dabei wichtige Maßnahmen. Die Sanierung erfolgt
-                            vornehmlich mit enkeltauglichen Architekturkonzepten und langlebigen, nachwachsenden oder
-                            recycelten Rohstoffen. Es werden experimentelle ökologische Wohnbauten wie Tiny Houses,
-                            Erdhügelhäuser, modulare Holzhäuser und minimalistische Wohnbauten geplant.</p>
+                        <p><span id="t_text1_1901"></span></p>
+                        <p><span id="t_text2_1901"></span></p>
                     </div>
                 </div>
 
-                <!-- Der Ort und die Projekte -->
                 <div class="bubble c220 cisek2">
-                    <p class="bubble-name">Begegnungsort</p>
-                    <p class="bubble-detail">Soziokulturelle Dorfscheune,<br />Einbindung Gemeinde<br />& Umgebung</p>
+                    <p class="bubble-name"><span id="t_name_220"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_220"></span></p>
                     <div class="bubble-modal">
-                        <p>Als Treff- und Vernetzungspunkt für unsere Gemeinschaft sowie Menschen der Umgebung planen
-                            wir eine soziokulturelle Dorfscheune mit angrenzendem Freisitz im Garten.</p>
-                        <p>Es wird für die Region ein sogenannter “Dritter Ort*” – als Ausgleich zu Familie und Beruf –
-                            entstehen. Dieser dient dem gesellschaftlichen Diskurs.</p>
-                        <p>Konkret bedeutet dies, dass wir regelmäßige gemeinschaftliche Aktivitäten anbieten werden.
-                            Außerdem stellen wir unsere Räumlichkeiten für Feierlichkeiten, Gemeindetreffen oder einfach
-                            nur zum Zusammenkommen zur Verfügung.</p>
+                        <p><span id="t_text1_220"></span></p>
+                        <p><span id="t_text2_220"></span></p>
+                        <p><span id="t_text3_220"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c150 cisek1">
-                    <p class="bubble-name">Wohnen</p>
-                    <p class="bubble-detail">Wohnen</p>
+                    <p class="bubble-name"><span id="t_name_1501"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_1501"></span></p>
                     <div class="bubble-modal">
-                        <p>In den Wohngebäuden sollen sowohl Privatwohnungen, WG-Zimmer als auch gemeinschaftlich
-                            genutzte Räume entstehen. Außerdem wird ein Gebiet auf dem Grundstück für experimentelle
-                            Bauten bzw. Tiny-Häuser sein.</p>
-                        <p>Mehrgenerationen-Wohnen hat einen hohen Stellenwert in unserer Gemeinschaft.</p>
-                        <p>Durch die Trennung zwischen Gemeinschafts- und Privatraum erschaffen wir ein Gleichgewicht
-                            zwischen Gruppenidentität und Individualismus. Rückzugsmöglichkeiten und Raum für innere und
-                            individuelle Prozesse sehen wir als gleichbedeutend mit gemeinschaftlichen Aktionen. So kann
-                            sich jede*r nach eigenem Empfinden und aktueller Lebenssituation in der Gemeinschaft
-                            einbringen.</p>
+                        <p><span id="t_text1_1501"></span></p>
+                        <p><span id="t_text2_1501"></span></p>
+                        <p><span id="t_text3_1501"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c200 ci5">
-                    <p class="bubble-name">Kunst & <br />Kultur</p>
-                    <p class="bubble-detail">Festivals,<br />Veranstaltungen,<br />Kunsthandwerk</p>
+                    <p class="bubble-name"><span id="t_name_2001"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_2001"></span></p>
                     <div class="bubble-modal">
-                        <p>Wir sind Kulturbegeistert und wünschen uns einen bunten Ort mit Raum für
-                            Entfaltungsmöglichkeiten und künstlerisches Schaffen. Raum für kreative Ideen haben wir
-                            genug.</p>
+                        <p><span id="t_text1_2001"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c220 cisek2">
-                    <p class="bubble-name">Transformative Bildung <br />und Partizipation</p>
-                    <p class="bubble-detail">Kinder und<br />Jugendliche</p>
+                    <p class="bubble-name"><span id="t_name_1502"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_1502"></span></p>
                     <div class="bubble-modal">
-                        <p>Wir möchten einen außerschulischen Lernort schaffen, an dem neue Ideen durch transformatives
-                            Lernen entwickelt und umgesetzt werden können. Die Bildungsangebote werden niedrigschwellig,
-                            inklusiv und handlungsorientiert sein und sich orientieren an Konzepten wie BNE,
-                            Demokratiebildung und kultureller Bildung.</p>
-                        <p>Zielgruppe sind Kinder, Jugendliche und Multiplikator*innen aus formalen und non-formalen
-                            Bildungsbereichen.</p>
+                        <p><span id="t_text1_1502"></span></p>
+                        <p><span id="t_text2_1502"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c150 cisek3">
-                    <p class="bubble-name">Grüner <br />Tourismus</p>
-                    <p class="bubble-detail">Café,<br />Gästehäuser</p>
+                    <p class="bubble-name"><span id="t_name_150"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_150"></span></p>
                     <div class="bubble-modal">
-                        <p>Unser Gut in Pauscha wird Raum für den Grünen Tourismus bieten. Wir werden aktiv an den
-                            Radweg "acht" angebunden sein und Reisenden damit die Möglichkeit geben, den gelebten
-                            Strukturwandel kennenzulernen. In unserem kleinen Café “Plauscha” werden erlesene Angebote
-                            aus ökologischen, regionalen Produkten sowie Kunst- und Handwerkskunst zu finden sein.
-                            Gästezimmer werden zur Übernachtung zur Verfügung stehen. Zusätzlich wird es
-                            Kunstausstellungen, musikalische Darbietungen und Veranstaltungen für eine respektvolle
-                            Erfahrung des Tier- und Pflanzenreichs sowie Essbare Gärten geben.</p>
-                        <p>Unsere Besucher werden außerdem Einblicke in eine Gemeinschaft mitten im Strukturwandel
-                            bekommen und den renaturierten See in naturnaher Atmosphäre genießen können. Wir werden auch
-                            eine Vielzahl von Seminaren und Bildungsveranstaltungen anbieten.</p>
+                        <p><span id="t_text1_150"></span></p>
+                        <p><span id="t_text2_150"></span></p>
+                    </div>
+                </div>
+
+                <div class="bubble c200 cisek2">
+                    <p class="bubble-name"><span id="t_name_200"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_200"></span></p>
+                    <div class="bubble-modal">
+                        <p><span id="t_text1_200"></span></p>
+                        <p><span id="t_text2_200"></span></p>
                     </div>
                 </div>
 
                 <div class="bubble c190 ci5">
-                    <p class="bubble-name">Permakultur</p>
-                    <p class="bubble-detail">Ökologische<br />Landwirtschaft,<br />Agro-Forst</p>
+                    <p class="bubble-name"><span id="t_name_190"></span></p>
+                    <p class="bubble-detail"><span id="t_detail_190"></span></p>
                     <div class="bubble-modal">
-                        <p>
-                            Permakultur, Agroforst und regenerative Landwirtschaft werden zentrale Bestandteile der
-                            regionalen Versorgung mit gesunden Lebensmitteln in Pauscha. Indem wir lernen und verstehen,
-                            wie die Natur funktioniert, können wir ihre Prozesse nachbilden und Nahrungsmittel so
-                            anbauen, wie es vorgesehen ist: als Teil eines komplexen Systems vieler Pflanzen und Tiere.
-                        </p>
-                        <p>
-                            Der Hof soll ein Ort sein, an dem das zusammenleben von Mensch, Tier und Pflanze im Einklang
-                            ist - ohne künstliche Pestizide, Dünger oder Antibiotika.
-                        </p>
+                        <p><span id="t_text1_190"></span></p>
+                        <p><span id="t_text2_190"></span></p>
                     </div>
                 </div>
+
 
             </div>
 
@@ -499,37 +450,31 @@
         </div>
 
         <div id="zuwachs" class="zuwachs-section">
-            <h1>Zuwachs</h1>
-            <p style="padding-top: 40px; font-weight: bold;">Einzelpersonen</p>
+            <h1><span id="t_z"></span></h1>
+            <p style="padding-top: 40px; font-weight: bold;"><span id="t_e"></span></p>
             <p style="padding-top: 10px;">
-                Um zu wachsen, suchen wir gezielt weitere Pionier*innen des nachhaltigen Denkens und fachliche
-                Expert*innen, um mit ihnen Hand in Hand das Projekt in Pauscha gemeinsam zu gestalten.
+                <span id="t_Um zu wachsen"></span>
             </p>
-            <p>Konkret suchen wir aktuell Menschen mit folgenden Professionen: Landwirt*in, Handwerker*innen,
-                Architekt*innen, Buchhalter*in</p>
-            <p style="padding-top: 40px; font-weight: bold;">Gruppen</p>
+            <p><span id="t_Konkret suchen wir aktuell Menschen mit folgenden Professionen:"></span> <span
+                    id="t_Landwirt*in"></span>, <span id="t_Handwerker*innen"></span>, <span
+                    id="t_Architekt*innen"></span>, <span id="t_Buchhalter*in"></span></p>
+            <p style="padding-top: 40px; font-weight: bold;"><span id="t_G"></span></p>
             <p style="padding-top: 10px;">
-                Wir sind auf der Suche nach weiteren Gruppen, die für die Verwirklichung ihrer Projektidee nur noch
-                einen Ort benötigen und sich unserem Projekt als ein soziokratischer Arbeitskreis anschließen möchten.
-                Wenn ihr Interesse daran habt, den Ort zu besuchen und uns kennenzulernen, meldet euch gerne und erzählt
-                uns ein paar Worte über euch: hi@ebenso.org.
+                <span id="t_W"></span> hi@ebenso.org.
             </p>
         </div>
 
         <div class="spenden-section" id="spende">
-            <h1>Unterstützung </h1>
-            <p style="padding-top: 20px;">Die sanierungsbedürftigen Gebäude des ehemaligen Ritterguts benötigen
-                möglichst vor dem kommenden Winter
-                erste Maßnahmen zur Schadenssicherung an den Dächern. Hierbei sind wir auf Unterstützung angewiesen und
-                für jegliche Hilfe in Form von Spenden sehr dankbar. Dein Engagement kann einen wichtigen Beitrag zur
-                Förderung des strukturellen Wandels im ländlichen Raum leisten. </p>
+            <h1><span id="t_spende1"></span> </h1>
+            <p style="padding-top: 20px;"><span id="t_spende2"></span> </p>
             <!--<div class="donation-form">
                   <h5>Spendenbetrag eingeben:</h3>
                   <input type="number" id="donation-amount" step="0.01" min="0.01" placeholder="Betrag in EUR" required>
                   <button id="donate-btn">Jetzt spenden</button>
                 </div>-->
             <p style="padding-top: 30px;">
-                Bankverbindung:</p>
+                <span id="t_spende3"></span>
+            </p>
             <div class="bank-details" style="padding-top: 10px;">
                 <!-- <p style="text-decoration: underline; font-weight: bold;">Bankverbindung:</p> -->
                 <p>BIC: GENODEM1GLS</p>
@@ -539,7 +484,7 @@
                     <input type="hidden" name="business" value="hi@ebenso.org">
                     <input type="hidden" name="currency_code" value="EUR">
 
-                    <p>Spenden via PayPal:</p>
+                    <p><span id="t_spende4"></span></p>
                     <p>
                         <!-- Replace the existing image source with the URL of the German PayPal donate button image -->
                         <input type="image" src="https://www.paypalobjects.com/de_DE/i/btn/btn_donate_LG.gif"
@@ -556,22 +501,17 @@
             </div>
 
 
-            <p style="padding-top: 50px;">Als gemeinnütziger Verein sind wir berechtigt, Spendenquittungen auszustellen.
+            <p style="padding-top: 50px;"><span id="t_spende5"></span>
             </p>
-            <p style="padding-top: 30px;">Du kannst dir vorstellen, den Kauf des Objektes finanziell mit Direktkrediten
-                zu unterstützen? Sprich uns
-                gerne an!</p>
+            <p style="padding-top: 30px;"><span id="t_spende6"></span></p>
 
         </div>
 
 
 
         <div id="kulturraeume" class="kulturraeume-section">
-            <h1>Kulturräume</h1>
-            <p>Die Mitglieder unseres Vereins sind in der Kulturszene zuhause. Wir lieben es Räume zu öffnen, die
-                Menschen zusammenbringen, Freiräume zu schaffen und Kunst und Kultur zu fördern. Dies ist ein
-                Kernelement unseres zukünftigen Lebensmodelles und wir leben es bereits. Wir sind begeistert, unsere
-                Liebe zur Kunst und Kultur mit anderen zu teilen.</p>
+            <h1><span id="t_Kulturraum"></span></h1>
+            <p><span id="t_Kulturraumtext"></span></p>
 
         </div>
         <div class="gallery">
@@ -679,7 +619,7 @@
         <script src="script/shader.js"></script>
 
         <!-- Loading Spinner für Videos-->
-        <script>
+        <!-- <script>
 
             const videos = document.querySelectorAll(".vid");
 
@@ -697,7 +637,7 @@
 
             });
 
-        </script>
+        </script> -->
 
         <!-- Modal beim Klick außerhalb schließen -->
         <script>
@@ -727,11 +667,25 @@
 
         </script>
 
+        <script src="translations.js"></script>
+
 
         <!-- Footer -->
         <footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
             <a href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
-            <a href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;&nbsp;<br>
+            <a href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;&nbsp;
+            <li>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">Sprache</button>
+                    <div id="languageDropdown" class="dropdown-content">
+                        <a href="#" onclick="changeLanguage('en')">en</a>
+                        <a href="#" onclick="changeLanguage('de')">de</a>
+                        <a href="#" onclick="changeLanguage('de_einfache_sprache')">de einfach</a>
+                    </div>
+                </div>
+            </li>
+            <br>
+
             ©2023 ebenso e.V<br>
 
             <a href="https://www.instagram.com/ebenso_e.v/" target="_blank"><i

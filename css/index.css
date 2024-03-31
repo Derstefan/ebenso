@@ -2,7 +2,7 @@
     --logoeffect: 1.5px 1.5px #b6ebfb, -1.5px -1.5px #ffb3b3;
     --transparentwhite: #ffffffaa;
     --default-font: Manrope;
-    --title-picture: url('../pics/ebenso/ebenso_quer.jpg');
+    --title-picture: url('https://lh3.googleusercontent.com/pw/AP1GczMVBN_wlAt3qRArOrfkhhbbrngt9WDJaAJ9XVbu_5heYlofYQ_3a4hajF291DskbuftX32RFpmseQ7JM36yVll7uJDyok73t2xiowMl7Ur4k-P6oRj1gYTJAGsTTHdGgfWG8tz_UYtfvOEudAcQuOY=w1490-h993-s-no-gm');
     --pauscha-picture: url('../pics/pauscha/skizze2.jpg');
     /* Farbcodes aus der CI */
     --ci-01: #9b96e8;
@@ -256,11 +256,13 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      background-color: #ffffff;
-    }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    background-color: #ffffff;
+  }
 
     .gallery-item {
         position: relative;
@@ -272,6 +274,7 @@ h1,h2,h3,h4,h5,h6 {
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
+        
         transition: background-color 0.3s ease, filter 0.3s ease;
     }
     
