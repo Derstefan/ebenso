@@ -10,7 +10,7 @@ i18next.init({
                 "t_TUNTERSTÜTZUNG": "Support",
                 "t_TKULTURRÄUME": "Cultural Spaces",
                 "t_TKONTAKT": "Contact",
-
+                "t_Sprache":"Language",
                 "t_Ein Leben in": "\"A life in ",
                 "t_Gemeinschaft": "Community",
                 "t_Leben": "Life",
@@ -132,6 +132,7 @@ i18next.init({
                 "t_TUNTERSTÜTZUNG": "Unterstützung",
                 "t_TKULTURRÄUME": "Kulturräume",
                 "t_TKONTAKT": "Kontakt",
+                "t_Sprache":"Sprache",
 
                 "t_Ein Leben in": "\"Ein Leben in ",
                 "t_Gemeinschaft": "Gemeinschaft",
@@ -264,6 +265,7 @@ i18next.init({
                 "t_TUNTERSTÜTZUNG": "Unterstützung",
                 "t_TKULTURRÄUME": "Kulturräume",
                 "t_TKONTAKT": "Kontakt",
+                "t_Sprache":"Sprache",
             
                 "t_Ein Leben in": "\"Ein Leben in ",
                 "t_Gemeinschaft": "Gemeinschaft",
@@ -417,3 +419,30 @@ function changeLanguage(language) {
         updatePageContent();
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the span element
+    var spracheSpan = document.getElementById("t_Sprache");
+    var submenu = document.getElementsByClassName("submenu")[0];
+
+    spracheSpan.addEventListener("click", function(event) {
+        event.stopPropagation(); // Prevent the click event from bubbling up
+        toggleSubMenu();
+    });
+
+    // Add event listener to close the submenu when clicking anywhere outside of it
+    document.body.addEventListener("click", function(event) {
+        if (event.target !== spracheSpan && !submenu.contains(event.target)) {
+            submenu.style.display = "none"; // Hide the submenu
+        }
+    });
+
+    function toggleSubMenu() {
+        if (submenu.style.display === "none" || submenu.style.display === "") {
+            submenu.style.display = "block"; // Show the submenu
+        } else {
+            submenu.style.display = "none"; // Hide the submenu
+        }
+    }
+});

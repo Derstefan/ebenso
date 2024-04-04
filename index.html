@@ -34,7 +34,17 @@
                 <li><a href="#spende"><span id="t_TUNTERSTÜTZUNG"></span></a></li>
                 <li><a href="#kulturraeume"><span id="t_TKULTURRÄUME"></span></a></li>
                 <li><a href="impressum.html"><span id="t_TKONTAKT"></span></a></li>
-
+                <!-- divider -->
+                <li style="margin-left: 50px;"></li>
+                <li>
+                    <a href="#"><span id="t_Sprache"></span></a>
+                    <ul class="submenu">
+                        <li> <a href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('de')">Deutsch</a></li>
+                        <li><a href="#" onclick="changeLanguage('de_einfache_sprache')">leichte
+                                Sprache</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -584,9 +594,11 @@
             let $root = $('html, body');
             $(document).ready(function () {
                 $('a[href^="#"]').click(function () {
-                    $('html, body').animate({
-                        scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-                    }, 500);
+                    if ($('[id="' + $.attr(this, 'href').substr(1) + '"]').length !== 0) {
+                        $('html, body').animate({
+                            scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                        }, 500);
+                    }
                     return false;
                 });
             });
@@ -674,16 +686,6 @@
         <footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
             <a href="impressum.html">Impressum</a>&nbsp;&nbsp;&nbsp;
             <a href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;&nbsp;
-            <li>
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">Sprache</button>
-                    <div id="languageDropdown" class="dropdown-content">
-                        <a href="#" onclick="changeLanguage('en')">English</a>
-                        <a href="#" onclick="changeLanguage('de')">Deutsch</a>
-                        <a href="#" onclick="changeLanguage('de_einfache_sprache')">einfaches Deutsch</a>
-                    </div>
-                </div>
-            </li>
             <br>
 
             ©2023 ebenso e.V<br>
