@@ -2,8 +2,8 @@
     --logoeffect: 1.5px 1.5px #b6ebfb, -1.5px -1.5px #ffb3b3;
     --transparentwhite: #ffffffaa;
     --default-font: Manrope;
-    --title-picture: url('../pics/ebenso/ebenso_quer.jpg');
-    --pauscha-picture: url('../pics/pauscha/skizze2.jpg');
+    --title-picture: url('https://res.cloudinary.com/diud7hil3/image/upload/v1717329005/pics/ebenso/vsgqooudfbglyj4hab7e.jpg');
+    --pauscha-picture: url('https://res.cloudinary.com/diud7hil3/image/upload/v1717328989/pics/pauscha/yiaa0dpxxjhes4q9k3mz.jpg');
     /* Farbcodes aus der CI */
     --ci-01: #9b96e8;
     --ci-02: #1e324d;
