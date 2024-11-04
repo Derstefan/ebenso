@@ -2,7 +2,7 @@
     --logoeffect: 1.5px 1.5px #b6ebfb, -1.5px -1.5px #ffb3b3;
     --transparentwhite: #ffffffaa;
     --default-font: Manrope;
-    --title-picture: url('https://res.cloudinary.com/diud7hil3/image/upload/v1717329005/pics/ebenso/vsgqooudfbglyj4hab7e.jpg');
+    --title-picture: url('https://res.cloudinary.com/diud7hil3/image/upload/f_auto,q_auto/v1/pics/kgtb6c9zckj7j2hhibnp');
     --pauscha-picture: url('https://res.cloudinary.com/diud7hil3/image/upload/v1717328989/pics/pauscha/yiaa0dpxxjhes4q9k3mz.jpg');
     /* Farbcodes aus der CI */
     --ci-01: #9b96e8;
@@ -97,10 +97,10 @@ h1,h2,h3,h4,h5,h6 {
     background-image: var(--title-picture);
     background-attachment: fixed;
     background-size: cover;
-    background-position: left 45% top 64%;
+    background-position: left 15% top 64%;
     background-repeat: no-repeat;
     background-color: var(--ci-05);
-    filter: hue-rotate(30deg);
+    /* filter: hue-rotate(30deg); */
     height: 100vh;
 }
 
