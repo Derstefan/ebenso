@@ -31,55 +31,59 @@
 
 /* Media query for small screens (adjust the max-width and sizes as needed) */
 @media (max-width: 992px) {
-  :root {
-    --size-1: 14vw;
-    --size-2: 10vw;
-    --size-3: 7.5vw;
-    --size-4: 5.6vw;
-    --size-4_5: 5.1vw;
-    --size-5: 4.2vw;
-    --size-5_5: 3.2vw;
-    --size-6: 2.5vw;
-  }
-}
-  
-
-
-@media screen and (orientation:portrait) {
-
+    :root {
+        --size-1: 14vw;
+        --size-2: 10vw;
+        --size-3: 7.5vw;
+        --size-4: 5.6vw;
+        --size-4_5: 5.1vw;
+        --size-5: 4.2vw;
+        --size-5_5: 3.2vw;
+        --size-6: 2.5vw;
+    }
 }
 
-@media screen and (orientation:landscape) {
 
-}
+
+@media screen and (orientation:portrait) {}
+
+@media screen and (orientation:landscape) {}
 
 * {
     box-sizing: border-box;
 }
 
-body {  
-  margin: 0;
-  padding: 0;
-  font-family: var(--default-font), sans-serif;
-  background-color: var(--ci-04);
-  overflow-x: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font), sans-serif;
+    background-color: var(--ci-04);
+    overflow-x: hidden;
 
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--default-font), sans-serif;
 }
-  .mySlides {display: none}
+
+.mySlides {
+    display: none
+}
 
 .row {
     padding: 20px;
 }
 
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 /*  @media only screen and (min-width: 1080px) {
@@ -134,62 +138,63 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 100vh;
 }
 
-[class*="-section"] h1{
+[class*="-section"] h1 {
     font-size: var(--size-3);
     padding: 0px 200px;
 }
 
 
-[class*="-section"] h2{
+[class*="-section"] h2 {
     font-size: var(--size-4_5);
     padding: 0px 200px;
 }
 
-    [class*="-section"] p {
-        font-size: var(--size-5);
-        line-height: var(--size-5);
-        padding: 0px 200px;
-    }
+[class*="-section"] p {
+    font-size: var(--size-5);
+    line-height: var(--size-5);
+    padding: 0px 200px;
+}
 
-    [class*="-section"] ul {
-        font-size: var(--size-5);
-        padding: 0px 200px;
-    }
+[class*="-section"] ul {
+    font-size: var(--size-5);
+    padding: 0px 200px;
+}
 
-    [class*="-section"] ul li{
-        font-size: var(--size-5);
-        list-style: inside;
-    }
-
-
+[class*="-section"] ul li {
+    font-size: var(--size-5);
+    list-style: inside;
+}
 
 
 
+
+
+#wirvideo {
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+@media (max-width: 992px) {
     #wirvideo {
-        position: fixed;
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: -5;
-    }
-    
-    @media (max-width: 992px) {
-        #wirvideo {
-      
-        
+
+
         width: 100vw;
         height: 30vh;
         top: 30vh;
         left: 0;
         z-index: -5;
-        }
-        .video-section{
-            min-height: 60vh;
-        }
-    
     }
+
+    .video-section {
+        min-height: 60vh;
+    }
+
+}
 
 
 
@@ -202,11 +207,11 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-    .das-sind-wir-section .text {
-        color: var(--ci-02);
-        font-size: var(--size-4_5);
-        line-height: var(--size-4);
-    }
+.das-sind-wir-section .text {
+    color: var(--ci-02);
+    font-size: var(--size-4_5);
+    line-height: var(--size-4);
+}
 
 /* --------------------------------------------- DER KERN -----------------------------------*/
 .der-kern-section {
@@ -218,63 +223,65 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-    .der-kern-section h1 {
-        color: var(--ci-sek-07);
+.der-kern-section h1 {
+    color: var(--ci-sek-07);
+}
+
+.der-kern-section h1 span {
+    font-size: var(--size-4);
+}
+
+.der-kern-section p {
+    color: var(--ci-sek-07);
+    text-align: left;
+}
+
+
+
+@media (max-width: 992px) {
+    .der-kern-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
     }
 
-    .der-kern-section h1 span {
-        font-size: var(--size-4);
+    .der-kern-section h1 {
+        padding: 0px 40px;
+
     }
 
     .der-kern-section p {
-        color: var(--ci-sek-07);
-        text-align: left;
+        padding: 0px 40px;
     }
+}
 
-
-
-    @media (max-width: 992px) {
-        .der-kern-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items (text) to the left */
-            justify-content: center; /* Vertically center the items (text) */
-          }
-    
-          .der-kern-section h1 {
-            padding: 0px 40px;
-    
-        }
-    
-        .der-kern-section p {
-            padding: 0px 40px;
-        }
-    }
-
-  .bilder-section {
+.bilder-section {
     text-align: center;
-  }
+}
 
-  
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      background-color: #ffffff;
-    }
 
-    .gallery-item {
-        position: relative;
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        transition: background-color 0.3s ease, filter 0.3s ease;
-    }
-    
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: #ffffff;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
 .gallery-item img {
     position: absolute;
     top: 0;
@@ -283,8 +290,8 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease, z-index 0s ease 0.3s, position 0s ease 0.3s;
-    transition: background-color 0.3s ease, filter 0.3s ease; 
-    filter: grayscale(30%); 
+    transition: background-color 0.3s ease, filter 0.3s ease;
+    filter: grayscale(30%);
 }
 
 .gallery-item:hover h2,
@@ -335,67 +342,72 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
 }
 
+.entstehung-section h1 {
+    color: var(--ci-01);
+}
+
+.entstehung-section p {
+    color: var(--ci-01);
+    text-align: left;
+}
+
+
+@media (max-width: 992px) {
+    .entstehung-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
+    }
+
     .entstehung-section h1 {
-        color: var(--ci-01);
+        padding: 0px 40px;
+
     }
 
     .entstehung-section p {
-        color: var(--ci-01);
-        text-align: left;
+        padding: 0px 40px;
     }
+}
 
 
-    @media (max-width: 992px) {
-        .entstehung-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items (text) to the left */
-            justify-content: center; /* Vertically center the items (text) */
-          }
-    
-          .entstehung-section h1 {
-            padding: 0px 40px;
-    
-        }
-    
-        .entstehung-section p {
-            padding: 0px 40px;
-        }
-    }
+.canvas-container {
+    position: relative;
+    width: 100vw;
+    height: 25vw;
+    display: block;
+}
 
+#canvas {
+    position: absolute;
+    width: 100vw;
+    height: 25vw;
+}
 
-    .canvas-container {
-        position: relative;
-        width: 100vw;
-        height: 25vw;
-        display: block;
-    }
-
-    #canvas{
-        position: absolute;
-        width: 100vw;
-        height: 25vw;
-    }
-    
-    .canvas-text-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 25vw;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        z-index: 1; /* Ensure the div is displayed on top of the canvas */
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Four columns */
-        gap: 20px; /* Adjust the gap as needed */
-        font-size: var(--size-5);
-        color: var(--ci-02);
-        text-shadow: 4px 1px 2px rgba(255, 255, 255, 0.5); 
-        padding: 40px;
-        font-family: 'Cardo'!important;
-    }
+.canvas-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 25vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    /* Ensure the div is displayed on top of the canvas */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four columns */
+    gap: 20px;
+    /* Adjust the gap as needed */
+    font-size: var(--size-5);
+    color: var(--ci-02);
+    text-shadow: 4px 1px 2px rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    font-family: 'Cardo' !important;
+}
 
 
 
@@ -407,7 +419,7 @@ h1,h2,h3,h4,h5,h6 {
         height: 100vw;
     }
 
-    #canvas{
+    #canvas {
         width: 100vw;
         height: 100vw;
     }
@@ -429,7 +441,7 @@ h1,h2,h3,h4,h5,h6 {
         height: 300vw;
     }
 
-    #canvas{
+    #canvas {
         width: 100vw;
         height: 300vw;
     }
@@ -451,22 +463,22 @@ h1,h2,h3,h4,h5,h6 {
     padding: 50px 0px 40px 0px;
 }
 
-    .projekte-smallsection h1 {
-        color: var(--ci-02);
-        font-size: var(--size-3);
-    }
+.projekte-smallsection h1 {
+    color: var(--ci-02);
+    font-size: var(--size-3);
+}
 
-  .divider {
-    background-color:var(--ci-02);
+.divider {
+    background-color: var(--ci-02);
     padding: 50px;
     text-align: center;
-  }
+}
 
 
 
 
 
-  #pauscha-pic {
+#pauscha-pic {
     background-image: var(--pauscha-picture);
     background-size: cover;
     background-repeat: no-repeat;
@@ -480,15 +492,15 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-#pauscha-pic {
-    background-image: var(--pauscha-picture);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #FFFDEF;
-    height: 50vh;
-    min-height: auto;
-    display: block;
-}
+    #pauscha-pic {
+        background-image: var(--pauscha-picture);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #FFFDEF;
+        height: 50vh;
+        min-height: auto;
+        display: block;
+    }
 }
 
 
@@ -500,112 +512,267 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
 }
 
+.pauscha-section h1 {
+    color: var(--ci-sek-07);
+    padding: 0px 200px;
+
+}
+
+.pauscha-section p {
+    padding: 0px 200px;
+    color: var(--ci-sek-07);
+}
+
+@media (max-width: 992px) {
+    .pauscha-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
+        min-height: 140vh;
+    }
+
     .pauscha-section h1 {
-        color: var(--ci-sek-07);
-        padding: 0px 200px;
+        padding: 0px 40px;
 
     }
 
     .pauscha-section p {
-        padding: 0px 200px;
-        color: var(--ci-sek-07);
+        padding: 0px 40px;
+    }
+}
+
+/* Deine bestehenden Basis-Styles */
+.dorf-section {
+    background-color: var(--ci-01);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* Optional: Füge etwas vertikalen Innenabstand hinzu */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.dorf-section h1 {
+    color: var(--ci-02);
+    padding: 0px 200px;
+    /* Optional: Füge etwas Abstand unter der Überschrift hinzu */
+    margin-bottom: 20px;
+    /* Oder padding-bottom */
+    text-align: center;
+    /* Zentriert die Überschrift über dem Inhalt */
+}
+
+.dorf-section p {
+    padding: 0px 200px;
+    /* Dieses Padding wird später für die Spalten angepasst */
+    color: var(--ci-02);
+    /* Optional: Füge etwas Abstand zwischen den Absätzen hinzu */
+    margin-bottom: 1em;
+    /* Oder padding-bottom */
+}
+
+/* Styles für den Wrapper und die Spalten (ersetzt Tailwind) */
+.dorf-content-wrapper {
+    /* Standardmäßig kein Flex, Spalten untereinander */
+    width: 100%;
+    /* Nimmt die Breite des Elternelements ein */
+    box-sizing: border-box;
+    /* Stellt sicher, dass Padding in die Breite eingerechnet wird */
+}
+
+.dorf-column {
+    /* Standardmäßig volle Breite */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styles ab dem 'md' Breakpoint (ersetzt md:flex, md:gap-8, md:w-1/2) */
+@media (min-width: 768px) {
+
+    /* Tailwind 'md' Breakpoint */
+    .dorf-content-wrapper {
+        display: flex;
+        /* Aktiviert Flexbox */
+        gap: 2rem;
+        /* Entspricht Tailwind gap-8 (32px) */
+        /* Zentriert die Spalten horizontal, falls sie nicht die volle Breite einnehmen */
+        /* Aber da sie 50% haben, füllen sie den Raum normalerweise aus */
+        justify-content: center;
+        /* Wichtig: Eigene Paddings für den Wrapper, damit die Spalten nicht das Padding von h1/p erben */
+        padding: 0 200px;
     }
 
-    @media (max-width: 992px) {
-        .pauscha-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items (text) to the left */
-            justify-content: center; /* Vertically center the items (text) */
-            min-height: 140vh;
-          }
-    
-          .pauscha-section h1 {
-            padding: 0px 40px;
-    
+    .dorf-column {
+        width: 50%;
+        /* Entspricht Tailwind w-1/2 */
+    }
+
+    /* Wichtig: Das Padding von den p-Tags innerhalb der Spalten entfernen/anpassen, */
+    /* da der Wrapper jetzt das Padding hat */
+    .dorf-column p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Das Padding für h1 muss nicht unbedingt geändert werden, da es vor dem Wrapper steht */
+    /* .dorf-section h1 { */
+    /* padding: 0 200px; /* Bleibt gleich oder wird hier angepasst */
+    /* } */
+}
+
+
+/* Dein bestehender Media Query für kleinere Bildschirme */
+@media (max-width: 992px) {
+    .dorf-section {
+        /* display: flex; */
+        /* Ist schon im Basis-Style */
+        /* flex-direction: column; */
+        /* Ist schon im Basis-Style */
+        align-items: flex-start;
+        /* Überschreibt justify-content: center aus Basis */
+        justify-content: center;
+        /* Vertikal zentrieren, falls gewünscht, aber min-height macht mehr Sinn */
+        min-height: 140vh;
+        /* Behält die Mindesthöhe bei */
+        /* Padding für den Gesamtbereich anpassen */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .dorf-section h1 {
+        padding: 0px 40px;
+        /* Kleineres Padding für die Überschrift */
+        text-align: left;
+        /* Text linksbündig auf kleineren Screens */
+    }
+
+    /* Anpassung für den Wrapper unter 992px */
+    .dorf-content-wrapper {
+        /* Das Padding vom Wrapper auf kleineren Screens anpassen */
+        /* Nur wenn der Screen *größer* als 768px aber *kleiner* als 992px ist, */
+        /* sonst greift das Padding von p */
+        padding: 0 40px;
+    }
+
+    /* Styles für p innerhalb der Spalten unter 992px */
+    /* Diese Regel stellt sicher, dass auf Screens < 768px (wo keine Spalten sind) */
+    /* und zwischen 768px und 992px (wo Spalten sind, aber kleineres Padding gewünscht ist) */
+    /* das korrekte Padding angewendet wird. */
+    .dorf-section p {
+        /* Zielgenauer als .dorf-column p */
+        padding: 0px 40px;
+    }
+
+    /* Spezifische Anpassung für Spalten zwischen 768px und 992px */
+    @media (min-width: 768px) {
+        .dorf-column p {
+            padding-left: 0;
+            /* Innerhalb der Spalten kein extra Padding */
+            padding-right: 0;
         }
-    
-        .pauscha-section p {
-            padding: 0px 40px;
-        }
     }
+}
+
+/* Zusätzliche Regel, um das Padding von P zurückzusetzen, wenn es *nicht* in einer Spalte ist */
+/* Dies ist nur relevant, falls du <p> direkt in .dorf-section außerhalb von .dorf-content-wrapper hast */
+.dorf-section>p {
+    padding: 0px 200px;
+    /* Zurück zum breiten Padding */
+}
+
+@media (max-width: 992px) {
+    .dorf-section>p {
+        padding: 0px 40px;
+        /* Kleineres Padding */
+    }
+}
 
 
-    .pauscha-video-sec {
-        background-color: var(--ci-02);
-        text-align: center;
-        padding-bottom: 40px;
-    }
-    
+.pauscha-video-sec {
+    background-color: var(--ci-02);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pauscha-video {
+    width: 80vw;
+    /* Make the video fill its container */
+    height: 80vh;
+    /* Set initial height to 0 for aspect ratio preservation */
+}
+
+/* Optional: Add some styling to the video container on smaller screens */
+@media only screen and (max-width: 1000px) {
     .pauscha-video {
-        width: 80vw; /* Make the video fill its container */
-        height: 80vh; /* Set initial height to 0 for aspect ratio preservation */
+        width: 100vw;
+        /* Make the video fill its container */
+        height: 50vh;
     }
-    
-    /* Optional: Add some styling to the video container on smaller screens */
-    @media only screen and (max-width: 1000px) {
-        .pauscha-video {
-            width: 100vw; /* Make the video fill its container */
-            height: 50vh; 
-        }
-    }
+}
 
 
-  .keimzelle-section {
-    background-color:rgba(199, 73, 196, 0.32);
+.keimzelle-section {
+    background-color: rgba(199, 73, 196, 0.32);
     padding: 50px;
     text-align: center;
-  }
+}
 
-  .keimzelle-section .title {
+.keimzelle-section .title {
     color: white;
     margin-top: 20px;
     font-size: var(--size-2);
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
 
 
 
     .keimzelle-section h1 {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align items (text) to the left */
-        justify-content: center; /* Vertically center the items (text) */
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
         padding: 0px 40px;
 
     }
 }
 
-  @media only screen and (min-width: 1080px) {
-  .keimzelle-section .title {
-    color: white;
-    margin-top: 20px;
-    font-size: var(--size-5);
-    text-align: center;
-    display: inline-block;
-    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
-  }
-  .keimzelle-section .item {
+@media only screen and (min-width: 1080px) {
+    .keimzelle-section .title {
+        color: white;
+        margin-top: 20px;
+        font-size: var(--size-5);
+        text-align: center;
+        display: inline-block;
+        text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+    }
+}
+
+.keimzelle-section .item {
     color: white;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
     display: inline-block;
     text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-  }
+}
 
 
-  .hover-text {
+.hover-text {
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .hover-text:hover::after {
+}
+
+.hover-text:hover::after {
     content: attr(data-hover-text);
     position: absolute;
     bottom: 100%;
@@ -618,56 +785,59 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 20px;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .hover-text:hover::after {
+}
+
+.hover-text:hover::after {
     opacity: 1;
-  }
+}
 
 .keimzelle-section {
     background-color: var(--ci-sek-08);
 }
 
-    .keimzelle-section h1 {
-        color: var(--ci-01);
-    }
+.keimzelle-section h1 {
+    color: var(--ci-01);
+}
 
+.spenden-section {
+    background-color: var(--ci-02);
+    color: var(--ci-sek-07);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 140vh;
+}
+
+.spenden-section h1 {
+    margin: 0;
+}
+
+.spenden-section h2 b {
+    font-size: var(--size-7);
+
+}
+
+
+@media (max-width: 992px) {
     .spenden-section {
-        background-color: var(--ci-02);
-        color: var(--ci-sek-07);
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
         min-height: 140vh;
     }
-    
-        .spenden-section h1 {
-            margin: 0;
-        }
-        .spenden-section h2 b {
-            font-size: var(--size-7);
 
-        }
+    .spenden-section h1 {
+        padding: 0px 40px;
 
+    }
 
-        @media (max-width: 992px) {
-            .spenden-section {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start; /* Align items (text) to the left */
-                justify-content: center; /* Vertically center the items (text) */
-                min-height: 140vh;
-              }
-        
-              .spenden-section h1 {
-                padding: 0px 40px;
-        
-            }
-        
-            .spenden-section p {
-                padding: 0px 40px;
-            }
-        }
+    .spenden-section p {
+        padding: 0px 40px;
+    }
+}
 
 
 .zuwachs-section {
@@ -680,28 +850,31 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-    .zuwachs-section h1 {
-        margin: 0;
+.zuwachs-section h1 {
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .zuwachs-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
+        min-height: 140vh;
     }
 
-    @media (max-width: 992px) {
-        .zuwachs-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items (text) to the left */
-            justify-content: center; /* Vertically center the items (text) */
-            min-height: 140vh;
-          }
-    
-          .zuwachs-section h1 {
-            padding: 0px 40px;
-    
-        }
-        .zuwachs-section p {
-            padding: 0px 40px;
-        }
+    .zuwachs-section h1 {
+        padding: 0px 40px;
+
     }
-    
+
+    .zuwachs-section p {
+        padding: 0px 40px;
+    }
+}
+
 
 .kulturraeume-section {
     background-color: var(--ci-01);
@@ -711,27 +884,30 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
 }
 
-    .kulturraeume-section h1 {
-        margin: 0;
+.kulturraeume-section h1 {
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .kulturraeume-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align items (text) to the left */
+        justify-content: center;
+        /* Vertically center the items (text) */
+        min-height: 140vh;
     }
 
-    @media (max-width: 992px) {
-        .kulturraeume-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items (text) to the left */
-            justify-content: center; /* Vertically center the items (text) */
-            min-height: 140vh;
-          }
-    
-          .kulturraeume-section h1 {
-            padding: 0px 40px;
-    
-        }
-        .kulturraeume-section p {
-            padding: 0px 40px;
-        }
+    .kulturraeume-section h1 {
+        padding: 0px 40px;
+
     }
+
+    .kulturraeume-section p {
+        padding: 0px 40px;
+    }
+}
 
 #bubblearea {
     display: grid;
@@ -758,17 +934,17 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-    .bubble > p {
-        font-size: 15px;
-        line-height:15px;
-    }
+.bubble>p {
+    font-size: 15px;
+    line-height: 15px;
+}
 
 .bubble-detail {
     display: none;
 }
 
 .bubble:hover {
-    background-color: #ffffff!important;
+    background-color: #ffffff !important;
     cursor: pointer;
 }
 
@@ -780,7 +956,7 @@ h1,h2,h3,h4,h5,h6 {
     display: none;
 }
 
-.bubble-modal{
+.bubble-modal {
     display: none;
 }
 
@@ -788,7 +964,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--ci-01);
 }
 
-.bubble.ci2{
+.bubble.ci2 {
     background-color: var(--ci-02);
 }
 
@@ -813,7 +989,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--ci-sek-01);
 }
 
-.bubble.cisek2{
+.bubble.cisek2 {
     background-color: var(--ci-sek-02);
 }
 
@@ -896,17 +1072,17 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 15px;
 }
 
-    #modal p {
-        margin-bottom: 10px;
-        font-size: var(--size-6);
-        padding: 0;
-    }
+#modal p {
+    margin-bottom: 10px;
+    font-size: var(--size-6);
+    padding: 0;
+}
 
-    #modal .modal-button {
-        height: 50px;
-        /*text-align: right;*/
-        margin-bottom: 30px;
-    }
+#modal .modal-button {
+    height: 50px;
+    /*text-align: right;*/
+    margin-bottom: 30px;
+}
 
 /*        #modal .modal-button button {
             width: 50px;
@@ -945,6 +1121,7 @@ h1,h2,h3,h4,h5,h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
