@@ -195,10 +195,23 @@ h6 {
     object-fit: cover;
 }
 
+.title-video-text {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.title-video-text img {
+    max-width: 200px;
+    height: auto;
+}
+
 @media (max-width: 992px) {
     #wirvideo {
-
-
         width: 100vw;
         height: 30vh;
         top: 30vh;
@@ -210,6 +223,10 @@ h6 {
         min-height: 60vh;
     }
 
+    .title-video-text img {
+        max-width: 200px;
+        left: 50%;
+    }
 }
 
 
